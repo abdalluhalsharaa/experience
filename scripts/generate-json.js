@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+// ========== دوال مطابقة تماماً لتلك الموجودة في script.js ==========
 function slugify(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]+/g, '-').replace(/^-+|-+$/g, '') || 'item';
 }
@@ -181,7 +182,7 @@ function scanSubjectFolder(folderPath) {
   const ai = [];
 
   const files = fs.readdirSync(folderPath);
-  const txtFiles = files.filter(f => f.endsWith('.txt')).sort();
+  const txtFiles = files.filter(f => f.endsWith('.txt') && f !== 'AI'); // استبعاد مجلد AI
   for (const file of txtFiles) {
     const group = buildGroupFromFile(path.join(folderPath, file), subjectName, subjectId, 'lecture');
     if (group) lectures.push(group);
@@ -225,15 +226,17 @@ function scanSubjectFolder(folderPath) {
   };
 }
 
-const MATERIALS_DIR = './subjects';
+// ========== التنفيذ الرئيسي ==========
+const MATERIALS_DIR = './subjects';   // <-- هذا هو المفتاح: يقرأ فقط مجلد subjects
 if (!fs.existsSync(MATERIALS_DIR)) {
   console.error(`❌ Folder not found: ${MATERIALS_DIR}`);
   process.exit(1);
 }
 
+// تصفية المجلدات: نأخذ فقط المجلدات التي ليست من المجلدات النظامية
 const subjectFolders = fs.readdirSync(MATERIALS_DIR).filter(item => {
   const full = path.join(MATERIALS_DIR, item);
-  return fs.statSync(full).isDirectory() && !['.git', 'node_modules', '.github'].includes(item);
+  return fs.statSync(full).isDirectory() && !['.git', 'node_modules', '.github', 'scripts', 'audio', 'subjects'].includes(item);
 });
 
 const subjects = [];

@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "internal",
+    "name": "Internal",
+    "lectures": [
+      {
+        "id": "internal__lecture__hood",
+        "name": "Hood",
+        "type": "lecture",
+        "subjectName": "Internal",
+        "path": "Internal/Hood.txt",
+        "questions": [
+          {
+            "id": "internal__lecture__hood__1__xx9u8w11yn",
+            "number": "1",
+            "text": "Pppppppppppppp nt is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
+            "options": [
+              "200 ml and 12% increase in FEV1 after bronchodilator use",
+              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+              "7 8% increase in FEV1 after bronchodilator use",
+              "Nocturnal awakening due to cough or wheeze",
+              "Greater than 20% diurnal variation in peak expiratory flow"
+            ],
+            "originalOptions": [
+              "200 ml and 12% increase in FEV1 after bronchodilator use",
+              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+              "7 8% increase in FEV1 after bronchodilator use",
+              "Nocturnal awakening due to cough or wheeze",
+              "Greater than 20% diurnal variation in peak expiratory flow"
+            ],
+            "correctAnswer": "C) 7 8% increase in FEV1 after bronchodilator use",
+            "correctAnswerText": "7 8% increase in FEV1 after bronchodilator use",
+            "correctIndex": 2,
+            "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Internal",
+            "subjectId": "internal",
+            "lectureName": "Hood",
+            "groupName": "Hood",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "internal__lecture__hood__2__mmvlem6is2",
+            "number": "2",
+            "text": "Ppppppppp The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
+            "options": [
+              "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
+              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+              "Age ≥ 65 years",
+              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+              "Confusion (new onset)"
+            ],
+            "originalOptions": [
+              "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
+              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+              "Age ≥ 65 years",
+              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+              "Confusion (new onset)"
+            ],
+            "correctAnswer": "C) Respiratory Rate ≥ 18 breaths/min",
+            "correctAnswerText": "Age ≥ 65 years",
+            "correctIndex": 0,
+            "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Internal",
+            "subjectId": "internal",
+            "lectureName": "Hood",
+            "groupName": "Hood",
+            "sourceType": "lecture"
+          }
+        ]
+      },
+      {
+        "id": "internal__lecture__rs",
+        "name": "RS",
+        "type": "lecture",
+        "subjectName": "Internal",
+        "path": "Internal/RS.txt",
+        "questions": [
+          {
+            "id": "internal__lecture__rs__1__4jdfw9i2mn",
+            "number": "1",
+            "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
+            "options": [
+              "200 ml and 12% increase in FEV1 after bronchodilator use",
+              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+              "An 8% increase in FEV1 after bronchodilator use",
+              "Nocturnal awakening due to cough or wheeze",
+              "Greater than 20% diurnal variation in peak expiratory flow"
+            ],
+            "originalOptions": [
+              "200 ml and 12% increase in FEV1 after bronchodilator use",
+              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+              "An 8% increase in FEV1 after bronchodilator use",
+              "Nocturnal awakening due to cough or wheeze",
+              "Greater than 20% diurnal variation in peak expiratory flow"
+            ],
+            "correctAnswer": "C) An 8% increase in FEV1 after bronchodilator use",
+            "correctAnswerText": "An 8% increase in FEV1 after bronchodilator use",
+            "correctIndex": 0,
+            "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Internal",
+            "subjectId": "internal",
+            "lectureName": "RS",
+            "groupName": "RS",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "internal__lecture__rs__2__60p0hcvv1m",
+            "number": "2",
+            "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
+            "options": [
+              "Respiratory Rate ≥ 18 breaths/min",
+              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+              "Age ≥ 65 years",
+              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+              "Confusion (new onset)"
+            ],
+            "originalOptions": [
+              "Respiratory Rate ≥ 18 breaths/min",
+              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+              "Age ≥ 65 years",
+              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+              "Confusion (new onset)"
+            ],
+            "correctAnswer": "A) Respiratory Rate ≥ 18 breaths/min",
+            "correctAnswerText": "Respiratory Rate ≥ 18 breaths/min",
+            "correctIndex": 0,
+            "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Internal",
+            "subjectId": "internal",
+            "lectureName": "RS",
+            "groupName": "RS",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "internal__lecture__hood__1__xx9u8w11yn",
+        "number": "1",
+        "text": "Pppppppppppppp nt is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
+        "options": [
+          "200 ml and 12% increase in FEV1 after bronchodilator use",
+          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+          "7 8% increase in FEV1 after bronchodilator use",
+          "Nocturnal awakening due to cough or wheeze",
+          "Greater than 20% diurnal variation in peak expiratory flow"
+        ],
+        "originalOptions": [
+          "200 ml and 12% increase in FEV1 after bronchodilator use",
+          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+          "7 8% increase in FEV1 after bronchodilator use",
+          "Nocturnal awakening due to cough or wheeze",
+          "Greater than 20% diurnal variation in peak expiratory flow"
+        ],
+        "correctAnswer": "C) 7 8% increase in FEV1 after bronchodilator use",
+        "correctAnswerText": "7 8% increase in FEV1 after bronchodilator use",
+        "correctIndex": 2,
+        "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Internal",
+        "subjectId": "internal",
+        "lectureName": "Hood",
+        "groupName": "Hood",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "internal__lecture__hood__2__mmvlem6is2",
+        "number": "2",
+        "text": "Ppppppppp The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
+        "options": [
+          "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
+          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+          "Age ≥ 65 years",
+          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+          "Confusion (new onset)"
+        ],
+        "originalOptions": [
+          "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
+          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+          "Age ≥ 65 years",
+          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+          "Confusion (new onset)"
+        ],
+        "correctAnswer": "C) Respiratory Rate ≥ 18 breaths/min",
+        "correctAnswerText": "Age ≥ 65 years",
+        "correctIndex": 0,
+        "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Internal",
+        "subjectId": "internal",
+        "lectureName": "Hood",
+        "groupName": "Hood",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "internal__lecture__rs__1__4jdfw9i2mn",
+        "number": "1",
+        "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
+        "options": [
+          "200 ml and 12% increase in FEV1 after bronchodilator use",
+          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+          "An 8% increase in FEV1 after bronchodilator use",
+          "Nocturnal awakening due to cough or wheeze",
+          "Greater than 20% diurnal variation in peak expiratory flow"
+        ],
+        "originalOptions": [
+          "200 ml and 12% increase in FEV1 after bronchodilator use",
+          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+          "An 8% increase in FEV1 after bronchodilator use",
+          "Nocturnal awakening due to cough or wheeze",
+          "Greater than 20% diurnal variation in peak expiratory flow"
+        ],
+        "correctAnswer": "C) An 8% increase in FEV1 after bronchodilator use",
+        "correctAnswerText": "An 8% increase in FEV1 after bronchodilator use",
+        "correctIndex": 0,
+        "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Internal",
+        "subjectId": "internal",
+        "lectureName": "RS",
+        "groupName": "RS",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "internal__lecture__rs__2__60p0hcvv1m",
+        "number": "2",
+        "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
+        "options": [
+          "Respiratory Rate ≥ 18 breaths/min",
+          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+          "Age ≥ 65 years",
+          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+          "Confusion (new onset)"
+        ],
+        "originalOptions": [
+          "Respiratory Rate ≥ 18 breaths/min",
+          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+          "Age ≥ 65 years",
+          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+          "Confusion (new onset)"
+        ],
+        "correctAnswer": "A) Respiratory Rate ≥ 18 breaths/min",
+        "correctAnswerText": "Respiratory Rate ≥ 18 breaths/min",
+        "correctIndex": 0,
+        "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Internal",
+        "subjectId": "internal",
+        "lectureName": "RS",
+        "groupName": "RS",
+        "sourceType": "lecture"
+      }
+    ],
+    "totalQuestions": 4,
+    "totalLectures": 2,
+    "hasAiFolder": false
+  },
+  {
+    "id": "neuromedicine",
+    "name": "Neuromedicine",
+    "lectures": [
+      {
+        "id": "neuromedicine__lecture__headache",
+        "name": "Headache",
+        "type": "lecture",
+        "subjectName": "Neuromedicine",
+        "path": "Neuromedicine/Headache.txt",
+        "questions": [
+          {
+            "id": "neuromedicine__lecture__headache__1__0lwd0se1l4",
+            "number": "1",
+            "text": "Headache What is the most likely diagnosis?",
+            "options": [
+              "Migraine",
+              "Tension headache",
+              "Cluster headache",
+              "Temporal arteritis (Giant cell arteritis)"
+            ],
+            "originalOptions": [
+              "Migraine",
+              "Tension headache",
+              "Cluster headache",
+              "Temporal arteritis (Giant cell arteritis)"
+            ],
+            "correctAnswer": "D) Temporal arteritis (Giant cell arteritis)",
+            "correctAnswerText": "Temporal arteritis (Giant cell arteritis)",
+            "correctIndex": 3,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neuromedicine",
+            "subjectId": "neuromedicine",
+            "lectureName": "Headache",
+            "groupName": "Headache",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neuromedicine__lecture__headache__2__1qveq9tfh3",
+            "number": "2",
+            "text": "What is the treatment for temporal arteritis?",
+            "options": [
+              "NSAIDs",
+              "Oral corticosteroids (prednisolone)",
+              "Sumatriptan",
+              "Verapamil"
+            ],
+            "originalOptions": [
+              "NSAIDs",
+              "Oral corticosteroids (prednisolone)",
+              "Sumatriptan",
+              "Verapamil"
+            ],
+            "correctAnswer": "B) Oral corticosteroids (prednisolone)",
+            "correctAnswerText": "Oral corticosteroids (prednisolone)",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neuromedicine",
+            "subjectId": "neuromedicine",
+            "lectureName": "Headache",
+            "groupName": "Headache",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neuromedicine__lecture__headache__3__u8t9q1ewow",
+            "number": "3",
+            "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
+            "options": [
+              "Amitriptyline",
+              "Greater occipital nerve block",
+              "Verapamil",
+              "Valproic acid"
+            ],
+            "originalOptions": [
+              "Amitriptyline",
+              "Greater occipital nerve block",
+              "Verapamil",
+              "Valproic acid"
+            ],
+            "correctAnswer": "C) Verapamil",
+            "correctAnswerText": "Verapamil",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neuromedicine",
+            "subjectId": "neuromedicine",
+            "lectureName": "Headache",
+            "groupName": "Headache",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "neuromedicine__lecture__headache__1__0lwd0se1l4",
+        "number": "1",
+        "text": "Headache What is the most likely diagnosis?",
+        "options": [
+          "Migraine",
+          "Tension headache",
+          "Cluster headache",
+          "Temporal arteritis (Giant cell arteritis)"
+        ],
+        "originalOptions": [
+          "Migraine",
+          "Tension headache",
+          "Cluster headache",
+          "Temporal arteritis (Giant cell arteritis)"
+        ],
+        "correctAnswer": "D) Temporal arteritis (Giant cell arteritis)",
+        "correctAnswerText": "Temporal arteritis (Giant cell arteritis)",
+        "correctIndex": 3,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neuromedicine",
+        "subjectId": "neuromedicine",
+        "lectureName": "Headache",
+        "groupName": "Headache",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neuromedicine__lecture__headache__2__1qveq9tfh3",
+        "number": "2",
+        "text": "What is the treatment for temporal arteritis?",
+        "options": [
+          "NSAIDs",
+          "Oral corticosteroids (prednisolone)",
+          "Sumatriptan",
+          "Verapamil"
+        ],
+        "originalOptions": [
+          "NSAIDs",
+          "Oral corticosteroids (prednisolone)",
+          "Sumatriptan",
+          "Verapamil"
+        ],
+        "correctAnswer": "B) Oral corticosteroids (prednisolone)",
+        "correctAnswerText": "Oral corticosteroids (prednisolone)",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neuromedicine",
+        "subjectId": "neuromedicine",
+        "lectureName": "Headache",
+        "groupName": "Headache",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neuromedicine__lecture__headache__3__u8t9q1ewow",
+        "number": "3",
+        "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
+        "options": [
+          "Amitriptyline",
+          "Greater occipital nerve block",
+          "Verapamil",
+          "Valproic acid"
+        ],
+        "originalOptions": [
+          "Amitriptyline",
+          "Greater occipital nerve block",
+          "Verapamil",
+          "Valproic acid"
+        ],
+        "correctAnswer": "C) Verapamil",
+        "correctAnswerText": "Verapamil",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neuromedicine",
+        "subjectId": "neuromedicine",
+        "lectureName": "Headache",
+        "groupName": "Headache",
+        "sourceType": "lecture"
+      }
+    ],
+    "totalQuestions": 3,
+    "totalLectures": 1,
+    "hasAiFolder": false
+  },
+  {
+    "id": "surgery",
+    "name": "Surgery",
+    "lectures": [
+      {
+        "id": "surgery__lecture__fluids",
+        "name": "Fluids",
+        "type": "lecture",
+        "subjectName": "Surgery",
+        "path": "Surgery/Fluids.txt",
+        "questions": [
+          {
+            "id": "surgery__lecture__fluids__1__prkyragdl3",
+            "number": "1",
+            "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
+            "options": [
+              "800 mL/hr",
+              "1000 mL/hr",
+              "1250 mL/hr",
+              "1500 mL/hr",
+              "1800 mL/hr"
+            ],
+            "originalOptions": [
+              "800 mL/hr",
+              "1000 mL/hr",
+              "1250 mL/hr",
+              "1500 mL/hr",
+              "1800 mL/hr"
+            ],
+            "correctAnswer": "C) 1250 mL/hr",
+            "correctAnswerText": "1250 mL/hr",
+            "correctIndex": 2,
+            "explanation": "1. Total fluid 24h = 4 mL x 95 kg x 42 = 15,960 mL. 2. First 8h requirement (50%) = 7,980 mL. 3. Fluid already given = 3,000 mL. 4. Remaining fluid for first 8h = 4,980 mL. 5. Time remaining in first 8h window = 4 hours. 6. Rate = 4,980 mL / 4 hr = 1,245 mL/hr (closest to 1250).",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Fluids",
+            "groupName": "Fluids",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "surgery__lecture__fluids__2__z8etslnft3",
+            "number": "2",
+            "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
+            "options": [
+              "Acute renal failure",
+              "Cardiac arrhythmia",
+              "Compartment syndrome requiring fasciotomy",
+              "Curling's ulcer",
+              "Pulmonary embolism"
+            ],
+            "originalOptions": [
+              "Acute renal failure",
+              "Cardiac arrhythmia",
+              "Compartment syndrome requiring fasciotomy",
+              "Curling's ulcer",
+              "Pulmonary embolism"
+            ],
+            "correctAnswer": "A) Acute renal failure",
+            "correctAnswerText": "Acute renal failure",
+            "correctIndex": 0,
+            "explanation": "Dark urine after a high-voltage electrical burn suggests myoglobinuria due to rhabdomyolysis. This places the patient at high risk of acute kidney injury and requires prompt fluid resuscitation and monitoring.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Fluids",
+            "groupName": "Fluids",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "surgery__lecture__fluids__3__9sg56um5ft",
+            "number": "3",
+            "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
+            "options": [
+              "Metabolic alkalosis",
+              "Respiratory acidosis",
+              "Hyperchloremic metabolic acidosis",
+              "Hypochloremic metabolic acidosis",
+              "Respiratory alkalosis"
+            ],
+            "originalOptions": [
+              "Metabolic alkalosis",
+              "Respiratory acidosis",
+              "Hyperchloremic metabolic acidosis",
+              "Hypochloremic metabolic acidosis",
+              "Respiratory alkalosis"
+            ],
+            "correctAnswer": "C) Hyperchloremic metabolic acidosis",
+            "correctAnswerText": "Hyperchloremic metabolic acidosis",
+            "correctIndex": 2,
+            "explanation": "Normal saline contains high levels of chloride (154 mEq/L) compared to plasma. Excessive administration leads to hyperchloremia and a normal anion gap metabolic acidosis.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Fluids",
+            "groupName": "Fluids",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [
+      {
+        "id": "surgery__ai__pancreatitis",
+        "name": "Pancreatitis",
+        "type": "ai",
+        "subjectName": "Surgery",
+        "path": "Surgery/AI/Pancreatitis.txt",
+        "questions": [
+          {
+            "id": "surgery__ai__pancreatitis__1__pbptw40bez",
+            "number": "1",
+            "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
+            "options": [
+              "Serum amylase",
+              "Serum lipase",
+              "Alkaline phosphatase",
+              "Alanine aminotransferase (ALT)",
+              "C-reactive protein (CRP)"
+            ],
+            "originalOptions": [
+              "Serum amylase",
+              "Serum lipase",
+              "Alkaline phosphatase",
+              "Alanine aminotransferase (ALT)",
+              "C-reactive protein (CRP)"
+            ],
+            "correctAnswer": "B) Serum lipase",
+            "correctAnswerText": "Serum lipase",
+            "correctIndex": 1,
+            "explanation": "Serum lipase is preferred over serum amylase because it remains elevated longer and has higher sensitivity and specificity for pancreatic tissue injury. Amylase can rise in non-pancreatic conditions and drops quickly.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__2__vr5seiph8m",
+            "number": "2",
+            "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
+            "options": [
+              "CHADS2 score",
+              "Ranson criteria",
+              "Child-Pugh score",
+              "CURB-65",
+              "Glasgow Coma Scale"
+            ],
+            "originalOptions": [
+              "CHADS2 score",
+              "Ranson criteria",
+              "Child-Pugh score",
+              "CURB-65",
+              "Glasgow Coma Scale"
+            ],
+            "correctAnswer": "B) Ranson criteria",
+            "correctAnswerText": "Ranson criteria",
+            "correctIndex": 1,
+            "explanation": "Ranson criteria evaluate 5 parameters at admission and 6 parameters during the initial 48 hours to predict the severity and mortality risk of acute pancreatitis. The other scales are for stroke, liver failure, pneumonia, or consciousness.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__3__mn7o0el3mq",
+            "number": "3",
+            "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
+            "options": [
+              "Conservative management with intravenous fluids only",
+              "Immediate prophylactic administration of antihistamines",
+              "Initiating empiric antibiotic therapy and planning for drainage",
+              "High-dose corticosteroid therapy",
+              "Immediate total pancreatectomy"
+            ],
+            "originalOptions": [
+              "Conservative management with intravenous fluids only",
+              "Immediate prophylactic administration of antihistamines",
+              "Initiating empiric antibiotic therapy and planning for drainage",
+              "High-dose corticosteroid therapy",
+              "Immediate total pancreatectomy"
+            ],
+            "correctAnswer": "C) Initiating empiric antibiotic therapy and planning for drainage",
+            "correctAnswerText": "Initiating empiric antibiotic therapy and planning for drainage",
+            "correctIndex": 2,
+            "explanation": "The presence of gas bubbles within a fluid collection indicates infected pancreatic necrosis or abscess. This requires targeted antibiotic treatment (such as carbapenems) along with minimally invasive or surgical necrosectomy/drainage.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__4__gzhnod3b73",
+            "number": "4",
+            "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
+            "options": [
+              "Grey Turner's sign",
+              "Cullen's sign",
+              "Murphy's sign",
+              "McBurney's sign",
+              "Rovsing's sign"
+            ],
+            "originalOptions": [
+              "Grey Turner's sign",
+              "Cullen's sign",
+              "Murphy's sign",
+              "McBurney's sign",
+              "Rovsing's sign"
+            ],
+            "correctAnswer": "B) Cullen's sign",
+            "correctAnswerText": "Cullen's sign",
+            "correctIndex": 2,
+            "explanation": "Cullen's sign is superficial bruising around the umbilicus. Grey Turner's sign refers to bruising along the flanks. Both signs represent retroperitoneal bleeding associated with severe hemorrhagic pancreatitis.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__5__n06xvzjrsv",
+            "number": "5",
+            "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
+            "options": [
+              "Jaundice, weight loss, and palpable gallbladder",
+              "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+              "Abdominal pain, ascites, and pleural effusion",
+              "Fever, right upper quadrant pain, and jaundice",
+              "Hematemesis, melena, and splenomegaly"
+            ],
+            "originalOptions": [
+              "Jaundice, weight loss, and palpable gallbladder",
+              "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+              "Abdominal pain, ascites, and pleural effusion",
+              "Fever, right upper quadrant pain, and jaundice",
+              "Hematemesis, melena, and splenomegaly"
+            ],
+            "correctAnswer": "B) Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+            "correctAnswerText": "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+            "correctIndex": 1,
+            "explanation": "This classic triad signifies the loss of both exocrine function (causing fat malabsorption/steatorrhea) and endocrine function (causing diabetes) due to extensive parenchymal destruction and calcification over time.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__6__jg5ywymzrq",
+            "number": "6",
+            "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
+            "options": [
+              "Hereditary pancreatitis",
+              "Alcoholic chronic pancreatitis",
+              "Autoimmune pancreatitis (Type 1)",
+              "Tropical pancreatitis",
+              "Idiopathic pancreatitis"
+            ],
+            "originalOptions": [
+              "Hereditary pancreatitis",
+              "Alcoholic chronic pancreatitis",
+              "Autoimmune pancreatitis (Type 1)",
+              "Tropical pancreatitis",
+              "Idiopathic pancreatitis"
+            ],
+            "correctAnswer": "C) Autoimmune pancreatitis (Type 1)",
+            "correctAnswerText": "Autoimmune pancreatitis (Type 1)",
+            "correctIndex": 0,
+            "explanation": "Type 1 Autoimmune Pancreatitis is part of an IgG4-related systemic disease. It responds well to steroid therapy and characteristically shows elevated serum levels of IgG4 antibodies.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__7__yi70bnazi3",
+            "number": "7",
+            "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
+            "options": [
+              "Bacterial infection of the biliary tree",
+              "Premature intra-acinar activation of trypsinogen to trypsin",
+              "Autoimmune destruction of islet cells",
+              "Ischemic injury due to mesenteric artery occlusion",
+              "Excessive secretion of bicarbonate by pancreatic ductal cells"
+            ],
+            "originalOptions": [
+              "Bacterial infection of the biliary tree",
+              "Premature intra-acinar activation of trypsinogen to trypsin",
+              "Autoimmune destruction of islet cells",
+              "Ischemic injury due to mesenteric artery occlusion",
+              "Excessive secretion of bicarbonate by pancreatic ductal cells"
+            ],
+            "correctAnswer": "B) Premature intra-acinar activation of trypsinogen to trypsin",
+            "correctAnswerText": "Premature intra-acinar activation of trypsinogen to trypsin",
+            "correctIndex": 1,
+            "explanation": "The cornerstone of acute pancreatitis pathogenesis is the inappropriate, premature activation of digestive zymogens (specifically trypsinogen to trypsin) within the pancreatic acinar cells, leading to autodigestion of the gland.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          }
+        ]
+      }
+    ],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "surgery__lecture__fluids__1__prkyragdl3",
+        "number": "1",
+        "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
+        "options": [
+          "800 mL/hr",
+          "1000 mL/hr",
+          "1250 mL/hr",
+          "1500 mL/hr",
+          "1800 mL/hr"
+        ],
+        "originalOptions": [
+          "800 mL/hr",
+          "1000 mL/hr",
+          "1250 mL/hr",
+          "1500 mL/hr",
+          "1800 mL/hr"
+        ],
+        "correctAnswer": "C) 1250 mL/hr",
+        "correctAnswerText": "1250 mL/hr",
+        "correctIndex": 2,
+        "explanation": "1. Total fluid 24h = 4 mL x 95 kg x 42 = 15,960 mL. 2. First 8h requirement (50%) = 7,980 mL. 3. Fluid already given = 3,000 mL. 4. Remaining fluid for first 8h = 4,980 mL. 5. Time remaining in first 8h window = 4 hours. 6. Rate = 4,980 mL / 4 hr = 1,245 mL/hr (closest to 1250).",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Fluids",
+        "groupName": "Fluids",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "surgery__lecture__fluids__2__z8etslnft3",
+        "number": "2",
+        "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
+        "options": [
+          "Acute renal failure",
+          "Cardiac arrhythmia",
+          "Compartment syndrome requiring fasciotomy",
+          "Curling's ulcer",
+          "Pulmonary embolism"
+        ],
+        "originalOptions": [
+          "Acute renal failure",
+          "Cardiac arrhythmia",
+          "Compartment syndrome requiring fasciotomy",
+          "Curling's ulcer",
+          "Pulmonary embolism"
+        ],
+        "correctAnswer": "A) Acute renal failure",
+        "correctAnswerText": "Acute renal failure",
+        "correctIndex": 0,
+        "explanation": "Dark urine after a high-voltage electrical burn suggests myoglobinuria due to rhabdomyolysis. This places the patient at high risk of acute kidney injury and requires prompt fluid resuscitation and monitoring.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Fluids",
+        "groupName": "Fluids",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "surgery__lecture__fluids__3__9sg56um5ft",
+        "number": "3",
+        "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
+        "options": [
+          "Metabolic alkalosis",
+          "Respiratory acidosis",
+          "Hyperchloremic metabolic acidosis",
+          "Hypochloremic metabolic acidosis",
+          "Respiratory alkalosis"
+        ],
+        "originalOptions": [
+          "Metabolic alkalosis",
+          "Respiratory acidosis",
+          "Hyperchloremic metabolic acidosis",
+          "Hypochloremic metabolic acidosis",
+          "Respiratory alkalosis"
+        ],
+        "correctAnswer": "C) Hyperchloremic metabolic acidosis",
+        "correctAnswerText": "Hyperchloremic metabolic acidosis",
+        "correctIndex": 2,
+        "explanation": "Normal saline contains high levels of chloride (154 mEq/L) compared to plasma. Excessive administration leads to hyperchloremia and a normal anion gap metabolic acidosis.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Fluids",
+        "groupName": "Fluids",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__1__pbptw40bez",
+        "number": "1",
+        "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
+        "options": [
+          "Serum amylase",
+          "Serum lipase",
+          "Alkaline phosphatase",
+          "Alanine aminotransferase (ALT)",
+          "C-reactive protein (CRP)"
+        ],
+        "originalOptions": [
+          "Serum amylase",
+          "Serum lipase",
+          "Alkaline phosphatase",
+          "Alanine aminotransferase (ALT)",
+          "C-reactive protein (CRP)"
+        ],
+        "correctAnswer": "B) Serum lipase",
+        "correctAnswerText": "Serum lipase",
+        "correctIndex": 1,
+        "explanation": "Serum lipase is preferred over serum amylase because it remains elevated longer and has higher sensitivity and specificity for pancreatic tissue injury. Amylase can rise in non-pancreatic conditions and drops quickly.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__2__vr5seiph8m",
+        "number": "2",
+        "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
+        "options": [
+          "CHADS2 score",
+          "Ranson criteria",
+          "Child-Pugh score",
+          "CURB-65",
+          "Glasgow Coma Scale"
+        ],
+        "originalOptions": [
+          "CHADS2 score",
+          "Ranson criteria",
+          "Child-Pugh score",
+          "CURB-65",
+          "Glasgow Coma Scale"
+        ],
+        "correctAnswer": "B) Ranson criteria",
+        "correctAnswerText": "Ranson criteria",
+        "correctIndex": 1,
+        "explanation": "Ranson criteria evaluate 5 parameters at admission and 6 parameters during the initial 48 hours to predict the severity and mortality risk of acute pancreatitis. The other scales are for stroke, liver failure, pneumonia, or consciousness.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__3__mn7o0el3mq",
+        "number": "3",
+        "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
+        "options": [
+          "Conservative management with intravenous fluids only",
+          "Immediate prophylactic administration of antihistamines",
+          "Initiating empiric antibiotic therapy and planning for drainage",
+          "High-dose corticosteroid therapy",
+          "Immediate total pancreatectomy"
+        ],
+        "originalOptions": [
+          "Conservative management with intravenous fluids only",
+          "Immediate prophylactic administration of antihistamines",
+          "Initiating empiric antibiotic therapy and planning for drainage",
+          "High-dose corticosteroid therapy",
+          "Immediate total pancreatectomy"
+        ],
+        "correctAnswer": "C) Initiating empiric antibiotic therapy and planning for drainage",
+        "correctAnswerText": "Initiating empiric antibiotic therapy and planning for drainage",
+        "correctIndex": 2,
+        "explanation": "The presence of gas bubbles within a fluid collection indicates infected pancreatic necrosis or abscess. This requires targeted antibiotic treatment (such as carbapenems) along with minimally invasive or surgical necrosectomy/drainage.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__4__gzhnod3b73",
+        "number": "4",
+        "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
+        "options": [
+          "Grey Turner's sign",
+          "Cullen's sign",
+          "Murphy's sign",
+          "McBurney's sign",
+          "Rovsing's sign"
+        ],
+        "originalOptions": [
+          "Grey Turner's sign",
+          "Cullen's sign",
+          "Murphy's sign",
+          "McBurney's sign",
+          "Rovsing's sign"
+        ],
+        "correctAnswer": "B) Cullen's sign",
+        "correctAnswerText": "Cullen's sign",
+        "correctIndex": 2,
+        "explanation": "Cullen's sign is superficial bruising around the umbilicus. Grey Turner's sign refers to bruising along the flanks. Both signs represent retroperitoneal bleeding associated with severe hemorrhagic pancreatitis.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__5__n06xvzjrsv",
+        "number": "5",
+        "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
+        "options": [
+          "Jaundice, weight loss, and palpable gallbladder",
+          "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+          "Abdominal pain, ascites, and pleural effusion",
+          "Fever, right upper quadrant pain, and jaundice",
+          "Hematemesis, melena, and splenomegaly"
+        ],
+        "originalOptions": [
+          "Jaundice, weight loss, and palpable gallbladder",
+          "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+          "Abdominal pain, ascites, and pleural effusion",
+          "Fever, right upper quadrant pain, and jaundice",
+          "Hematemesis, melena, and splenomegaly"
+        ],
+        "correctAnswer": "B) Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+        "correctAnswerText": "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+        "correctIndex": 1,
+        "explanation": "This classic triad signifies the loss of both exocrine function (causing fat malabsorption/steatorrhea) and endocrine function (causing diabetes) due to extensive parenchymal destruction and calcification over time.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__6__jg5ywymzrq",
+        "number": "6",
+        "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
+        "options": [
+          "Hereditary pancreatitis",
+          "Alcoholic chronic pancreatitis",
+          "Autoimmune pancreatitis (Type 1)",
+          "Tropical pancreatitis",
+          "Idiopathic pancreatitis"
+        ],
+        "originalOptions": [
+          "Hereditary pancreatitis",
+          "Alcoholic chronic pancreatitis",
+          "Autoimmune pancreatitis (Type 1)",
+          "Tropical pancreatitis",
+          "Idiopathic pancreatitis"
+        ],
+        "correctAnswer": "C) Autoimmune pancreatitis (Type 1)",
+        "correctAnswerText": "Autoimmune pancreatitis (Type 1)",
+        "correctIndex": 0,
+        "explanation": "Type 1 Autoimmune Pancreatitis is part of an IgG4-related systemic disease. It responds well to steroid therapy and characteristically shows elevated serum levels of IgG4 antibodies.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__7__yi70bnazi3",
+        "number": "7",
+        "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
+        "options": [
+          "Bacterial infection of the biliary tree",
+          "Premature intra-acinar activation of trypsinogen to trypsin",
+          "Autoimmune destruction of islet cells",
+          "Ischemic injury due to mesenteric artery occlusion",
+          "Excessive secretion of bicarbonate by pancreatic ductal cells"
+        ],
+        "originalOptions": [
+          "Bacterial infection of the biliary tree",
+          "Premature intra-acinar activation of trypsinogen to trypsin",
+          "Autoimmune destruction of islet cells",
+          "Ischemic injury due to mesenteric artery occlusion",
+          "Excessive secretion of bicarbonate by pancreatic ductal cells"
+        ],
+        "correctAnswer": "B) Premature intra-acinar activation of trypsinogen to trypsin",
+        "correctAnswerText": "Premature intra-acinar activation of trypsinogen to trypsin",
+        "correctIndex": 1,
+        "explanation": "The cornerstone of acute pancreatitis pathogenesis is the inappropriate, premature activation of digestive zymogens (specifically trypsinogen to trypsin) within the pancreatic acinar cells, leading to autodigestion of the gland.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      }
+    ],
+    "totalQuestions": 10,
+    "totalLectures": 2,
+    "hasAiFolder": true
+  }
+]

@@ -3,7 +3,7 @@ name: Generate subjects.json from TXT files
 on:
   push:
     paths:
-      - 'subjects/**/*.txt'
+      - '**/*.txt'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Generate subjects.json
-        run: node scripts/generate-json.js
+        run: node generate-json.js
 
       - name: Commit and push changes
         run: |

@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'subjects/**/*.txt'
-      - 'subjects/**/AI/*.txt'
   workflow_dispatch:
 
 jobs:

@@ -234,15 +234,23 @@ function getSectionAnalytics(subject, type){
   const rows = groups.map(group => {
     const total = group.questions.length;
     const answered = getSubjectProgressEntryForGroup(group);
-    const remaining = Math.max(0, total - answered);
-    const percentage = total ? Math.round((answered/total)*100) : 0;
-    return { group, total, answered, remaining, percentage };
+    const capped = Math.min(answered, total);
+    const remaining = Math.max(0, total - capped);
+    const percentage = total ? Math.round((capped/total)*100) : 0;
+    return { group, total, answered: capped, remaining, percentage };
   });
   const total = rows.reduce((sum, row) => sum + row.total, 0);
-  const answered = rows.reduce((sum, row) => sum + row.answered, 0);
-  const remaining = Math.max(0,total-answered);
-  const percentage = total ? Math.round((answered/total)*100) : 0;
-  return { rows, total, answered, remaining, percentage };
+  const uniqueAnsweredIds = new Set();
+  groups.forEach(group => {
+    const key = getGroupProgressKey(group.type || type, subject.name, group.name);
+    const entry = state.progress[key] || { questionIds: [] };
+    (entry.questionIds || []).forEach(id => uniqueAnsweredIds.add(id));
+  });
+  const answered = uniqueAnsweredIds.size;
+  const capped = Math.min(answered, total);
+  const remaining = Math.max(0, total - capped);
+  const percentage = total ? Math.round((capped/total)*100) : 0;
+  return { rows, total, answered: capped, remaining, percentage };
 }
 
 function openStatisticsPage(){ renderStatisticsPage(); showScreen('statistics-screen'); }

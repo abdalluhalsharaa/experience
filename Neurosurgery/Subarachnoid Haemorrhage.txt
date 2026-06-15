@@ -1,0 +1,45 @@
+Subarachnoid Haemorrhage
+What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?
+A) Conventional 4-vessel cerebral angiogram
+B) CTA brain
+C) Lumbar puncture (LP)
+D) CT brain without contrast
+Correct Answer: C) Lumbar puncture (LP)
+###
+A 62-year-old female patient was admitted to the ICU with aneurysmal SAH. 6 days later,
+she developed sudden aphasia and right-sided hemiplegia. What is the most likely cause?
+A) Rebleeding from MCA aneurysm
+B) Vasospasm in MCA
+C) Vasospasm in ACA
+D) Rebleeding from anterior communicating artery aneurysm
+Correct Answer: B) Vasospasm in MCA
+###
+Which of the following is WRONG regarding intracranial aneurysms?
+A) Peak age is 55-65 years
+B) More common in males than in females
+C) Rupture occurs in 95-97% of symptomatic cases
+D) Berry aneurysms account for 75-80% of SAH
+Correct Answer: B) More common in males than in females
+###
+A patient with SAH has GCS of 13-14 with no major deficit. What is the WFNS grade?
+A. WFNS Grade 1
+B. WFNS Grade 2
+C. WFNS Grade 3
+D. WFNS Grade 4
+Correct Answer: B) WFNS Grade 2
+###
+All of the following are in favor of surgical clipping over coiling in the management of
+intracranial aneurysms EXCEPT:
+A) Young patient with long life expectancy
+B) Aneurysm with wide neck
+C) Hunt and Hess grade 4 on admission
+D) Accessible aneurysm location
+Correct Answer: C) Hunt and Hess grade 4 on admission
+###
+What is the treatment for vasospasm after SAH?
+A) Triple H therapy (Hemodilution, Hypervolemia, Hypertension)
+B) Mannitol
+C) Dexamethasone
+D) Aspirin
+Correct Answer: A) Triple H therapy (Hemodilution, Hypervolemia, Hypertension)
+###

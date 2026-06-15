@@ -284,26 +284,26 @@
   }
 
   function appendMoveToBottomButton(group){
-    const actions = document.querySelector('#dialog-overlay .dialog-actions');
-    if(!actions) return;
-    actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
+  const actions = document.querySelector('#dialog-overlay .dialog-actions');
+  if(!actions) return;
+  actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
 
-    const moveBtn = document.createElement('button');
-    moveBtn.className = 'btn-primary dialog-extra-btn';
-    moveBtn.textContent = 'نعم ونقلها للأسفل';
-    moveBtn.onclick = function(){
-      hideDialog();
-      setGroupCompleted(group.id, true, { moveBottom:true, countAsAnswered:true });
-      const found = findGroupById(group.id);
-      if(found){
-        const { subject, sectionType } = found;
-        moveGroupToBottomByInfo(subject.name, sectionType, group.id);
-      }
-      showToast('تم تعليم العنصر كمكتمل ونقله للأسفل.', 'success');
-    };
+  const moveBtn = document.createElement('button');
+  moveBtn.className = 'btn-primary dialog-extra-btn';
+  moveBtn.textContent = 'نعم ونقلها للأسفل';
+  moveBtn.onclick = function(){
+    hideDialog();
+    const found = findGroupById(group.id);
+    if(found){
+      const { subject, sectionType } = found;
+      moveGroupToBottomByInfo(subject.name, sectionType, group.id);
+    }
+    setGroupCompleted(group.id, true, { moveBottom:true, countAsAnswered:true });
+    showToast('تم تعليم العنصر كمكتمل ونقله للأسفل.', 'success');
+  };
 
-    actions.appendChild(moveBtn);
-  }
+  actions.appendChild(moveBtn);
+}
 
   window.confirmCompleteGroup = function(idx){
     const group = (state.currentGroups || [])[idx];
@@ -483,36 +483,50 @@
   window.renderSelectionScreenWithEnhancements = renderSelectionScreenWithEnhancements;
 
   window.openSelectionBulkDialog = function(){
-    if(!shouldEnhanceSelectionScreen() || !Array.isArray(state.currentGroups) || !state.currentGroups.length) return;
-    removeDialogExtras();
-    showDialog({
-      title:'إدارة هذا القسم',
-      message:'<div>يمكنك تعليم كل العناصر في هذا القسم كمكتملة أو إعادة تعيينها.</div>',
-      showCancel:true,
-      confirmText:'تحديد الكل كمنجز',
-      cancelText:'إلغاء',
-      onConfirm:()=>{
+  if(!shouldEnhanceSelectionScreen() || !Array.isArray(state.currentGroups) || !state.currentGroups.length) return;
+  removeDialogExtras();
+  showDialog({
+    title:'إدارة هذا القسم',
+    message:'<div>يمكنك تعليم كل العناصر في هذا القسم كمكتملة أو إعادة تعيينها.</div>',
+    showCancel:true,
+    confirmText:'تحديد الكل كمنجز',
+    cancelText:'إلغاء',
+    onConfirm:()=>{
+      askConfirm('هذا الإجراء لا يمكن التراجع عنه. هل تريد تحديد كل العناصر كمنجزة؟', ()=>{
         markGroupsCompletedBulk(state.currentGroups.slice());
         showToast('تم تعليم كل عناصر هذا القسم كمكتملة.', 'success');
-      },
-      onCancel:()=>{}
-    });
+      });
+    },
+    onCancel:()=>{}
+  });
 
-    setTimeout(()=>{
-      const actions = document.querySelector('#dialog-overlay .dialog-actions');
-      if(!actions) return;
-      actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
-      const resetBtn = document.createElement('button');
-      resetBtn.className = 'btn-secondary dialog-extra-btn';
-      resetBtn.textContent = 'إعادة تعيين';
-      resetBtn.onclick = function(){
+  setTimeout(()=>{
+    const actions = document.querySelector('#dialog-overlay .dialog-actions');
+    if(!actions) return;
+    actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
+    
+    const confirmBtn = document.getElementById('dialog-confirm');
+    const cancelBtn = document.getElementById('dialog-cancel');
+    
+    if(confirmBtn) actions.removeChild(confirmBtn);
+    if(cancelBtn) actions.removeChild(cancelBtn);
+    
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'btn-secondary dialog-extra-btn';
+    resetBtn.textContent = 'إعادة تعيين';
+    resetBtn.onclick = function(){
+      askConfirm('هذا الإجراء لا يمكن التراجع عنه. هل تريد إعادة تعيين كل العناصر؟', ()=>{
         hideDialog();
         resetGroupsCompletionBulk(state.currentGroups.slice());
         showToast('تمت إعادة تعيين هذا القسم وتصفير إحصائياته.', 'success');
-      };
-      actions.insertBefore(resetBtn, actions.firstChild);
-    }, 0);
-  };
+      });
+    };
+    
+    actions.appendChild(cancelBtn);
+    actions.appendChild(resetBtn);
+    actions.appendChild(confirmBtn);
+  }, 0);
+};
 
   window.restoreCurrentSelectionOriginalOrder = function(){
     if(!state.currentGroups || !state.currentGroups.length) return;
@@ -1026,21 +1040,41 @@
   };
 
   async function prepareSecondsAudio(){
-    let secondsAudio = el('seconds-audio');
-    if(!secondsAudio){
-      secondsAudio = document.createElement('audio');
-      secondsAudio.id = 'seconds-audio';
-      secondsAudio.preload = 'auto';
-      document.body.appendChild(secondsAudio);
-    }
-    const src = await resolveAssetPath(['seconds.mp3','audio/seconds.mp3','assets/audio/seconds.mp3']);
-    if(secondsAudio.dataset.currentSrc !== src){
-      secondsAudio.src = src;
-      secondsAudio.dataset.currentSrc = src;
-      secondsAudio.load();
-    }
-    secondsAudio.volume = (state.settings.volume || 50) / 100;
+  let secondsAudio = el('seconds-audio');
+  if(!secondsAudio){
+    secondsAudio = document.createElement('audio');
+    secondsAudio.id = 'seconds-audio';
+    secondsAudio.preload = 'auto';
+    document.body.appendChild(secondsAudio);
   }
+  const candidates = [
+    'seconds.mp3',
+    'audio/seconds.mp3',
+    'assets/audio/seconds.mp3',
+    'audio/Seconds.mp3',
+    'audio/SECONDS.mp3',
+    './audio/seconds.mp3',
+    './seconds.mp3'
+  ];
+  let src = null;
+  for(const candidate of candidates){
+    try{
+      const u = encodeURI(candidate);
+      const r = await fetch(u, { method:'HEAD' });
+      if(r.ok){
+        src = u;
+        break;
+      }
+    }catch(e){}
+  }
+  if(!src) src = 'audio/seconds.mp3';
+  if(secondsAudio.dataset.currentSrc !== src){
+    secondsAudio.src = src;
+    secondsAudio.dataset.currentSrc = src;
+    secondsAudio.load();
+  }
+  secondsAudio.volume = (state.settings.volume || 50) / 100;
+}
 
   function playSecondsAlertSound(){
     if(!state.currentExam || state.currentExam.mode !== 'exam') return;

@@ -4,75 +4,6 @@
     "name": "Internal",
     "lectures": [
       {
-        "id": "internal__lecture__hood",
-        "name": "Hood",
-        "type": "lecture",
-        "subjectName": "Internal",
-        "path": "Internal/Hood.txt",
-        "questions": [
-          {
-            "id": "internal__lecture__hood__1__xx9u8w11yn",
-            "number": "1",
-            "text": "Pppppppppppppp nt is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
-            "options": [
-              "200 ml and 12% increase in FEV1 after bronchodilator use",
-              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
-              "7 8% increase in FEV1 after bronchodilator use",
-              "Nocturnal awakening due to cough or wheeze",
-              "Greater than 20% diurnal variation in peak expiratory flow"
-            ],
-            "originalOptions": [
-              "200 ml and 12% increase in FEV1 after bronchodilator use",
-              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
-              "7 8% increase in FEV1 after bronchodilator use",
-              "Nocturnal awakening due to cough or wheeze",
-              "Greater than 20% diurnal variation in peak expiratory flow"
-            ],
-            "correctAnswer": "C) 7 8% increase in FEV1 after bronchodilator use",
-            "correctAnswerText": "7 8% increase in FEV1 after bronchodilator use",
-            "correctIndex": 2,
-            "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
-            "batchName": "",
-            "pageNumber": "",
-            "subjectName": "Internal",
-            "subjectId": "internal",
-            "lectureName": "Hood",
-            "groupName": "Hood",
-            "sourceType": "lecture"
-          },
-          {
-            "id": "internal__lecture__hood__2__mmvlem6is2",
-            "number": "2",
-            "text": "Ppppppppp The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
-            "options": [
-              "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
-              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
-              "Age ≥ 65 years",
-              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
-              "Confusion (new onset)"
-            ],
-            "originalOptions": [
-              "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
-              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
-              "Age ≥ 65 years",
-              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
-              "Confusion (new onset)"
-            ],
-            "correctAnswer": "C) Respiratory Rate ≥ 18 breaths/min",
-            "correctAnswerText": "Age ≥ 65 years",
-            "correctIndex": 0,
-            "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
-            "batchName": "",
-            "pageNumber": "",
-            "subjectName": "Internal",
-            "subjectId": "internal",
-            "lectureName": "Hood",
-            "groupName": "Hood",
-            "sourceType": "lecture"
-          }
-        ]
-      },
-      {
         "id": "internal__lecture__rs",
         "name": "RS",
         "type": "lecture",
@@ -80,7 +11,7 @@
         "path": "Internal/RS.txt",
         "questions": [
           {
-            "id": "internal__lecture__rs__1__4jdfw9i2mn",
+            "id": "internal__lecture__rs__1__edd881xfpq",
             "number": "1",
             "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
             "options": [
@@ -110,7 +41,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "internal__lecture__rs__2__60p0hcvv1m",
+            "id": "internal__lecture__rs__2__nixgzsehbj",
             "number": "2",
             "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
             "options": [
@@ -146,67 +77,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "internal__lecture__hood__1__xx9u8w11yn",
-        "number": "1",
-        "text": "Pppppppppppppp nt is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
-        "options": [
-          "200 ml and 12% increase in FEV1 after bronchodilator use",
-          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
-          "7 8% increase in FEV1 after bronchodilator use",
-          "Nocturnal awakening due to cough or wheeze",
-          "Greater than 20% diurnal variation in peak expiratory flow"
-        ],
-        "originalOptions": [
-          "200 ml and 12% increase in FEV1 after bronchodilator use",
-          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
-          "7 8% increase in FEV1 after bronchodilator use",
-          "Nocturnal awakening due to cough or wheeze",
-          "Greater than 20% diurnal variation in peak expiratory flow"
-        ],
-        "correctAnswer": "C) 7 8% increase in FEV1 after bronchodilator use",
-        "correctAnswerText": "7 8% increase in FEV1 after bronchodilator use",
-        "correctIndex": 2,
-        "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
-        "batchName": "",
-        "pageNumber": "",
-        "subjectName": "Internal",
-        "subjectId": "internal",
-        "lectureName": "Hood",
-        "groupName": "Hood",
-        "sourceType": "lecture"
-      },
-      {
-        "id": "internal__lecture__hood__2__mmvlem6is2",
-        "number": "2",
-        "text": "Ppppppppp The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
-        "options": [
-          "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
-          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
-          "Age ≥ 65 years",
-          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
-          "Confusion (new onset)"
-        ],
-        "originalOptions": [
-          "hi Rate ≥ 18 breathste Rate ≥ 18 breaths/min",
-          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
-          "Age ≥ 65 years",
-          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
-          "Confusion (new onset)"
-        ],
-        "correctAnswer": "C) Respiratory Rate ≥ 18 breaths/min",
-        "correctAnswerText": "Age ≥ 65 years",
-        "correctIndex": 0,
-        "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
-        "batchName": "",
-        "pageNumber": "",
-        "subjectName": "Internal",
-        "subjectId": "internal",
-        "lectureName": "Hood",
-        "groupName": "Hood",
-        "sourceType": "lecture"
-      },
-      {
-        "id": "internal__lecture__rs__1__4jdfw9i2mn",
+        "id": "internal__lecture__rs__1__edd881xfpq",
         "number": "1",
         "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
         "options": [
@@ -236,7 +107,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "internal__lecture__rs__2__60p0hcvv1m",
+        "id": "internal__lecture__rs__2__nixgzsehbj",
         "number": "2",
         "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
         "options": [
@@ -266,8 +137,8 @@
         "sourceType": "lecture"
       }
     ],
-    "totalQuestions": 4,
-    "totalLectures": 2,
+    "totalQuestions": 2,
+    "totalLectures": 1,
     "hasAiFolder": false
   },
   {
@@ -282,7 +153,7 @@
         "path": "Neuromedicine/Headache.txt",
         "questions": [
           {
-            "id": "neuromedicine__lecture__headache__1__0lwd0se1l4",
+            "id": "neuromedicine__lecture__headache__1__jjwarj10yd",
             "number": "1",
             "text": "Headache What is the most likely diagnosis?",
             "options": [
@@ -310,7 +181,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neuromedicine__lecture__headache__2__1qveq9tfh3",
+            "id": "neuromedicine__lecture__headache__2__ua2wsqlk47",
             "number": "2",
             "text": "What is the treatment for temporal arteritis?",
             "options": [
@@ -338,7 +209,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neuromedicine__lecture__headache__3__u8t9q1ewow",
+            "id": "neuromedicine__lecture__headache__3__f29sp4b083",
             "number": "3",
             "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
             "options": [
@@ -372,7 +243,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "neuromedicine__lecture__headache__1__0lwd0se1l4",
+        "id": "neuromedicine__lecture__headache__1__jjwarj10yd",
         "number": "1",
         "text": "Headache What is the most likely diagnosis?",
         "options": [
@@ -400,7 +271,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neuromedicine__lecture__headache__2__1qveq9tfh3",
+        "id": "neuromedicine__lecture__headache__2__ua2wsqlk47",
         "number": "2",
         "text": "What is the treatment for temporal arteritis?",
         "options": [
@@ -428,7 +299,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neuromedicine__lecture__headache__3__u8t9q1ewow",
+        "id": "neuromedicine__lecture__headache__3__f29sp4b083",
         "number": "3",
         "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
         "options": [
@@ -472,7 +343,7 @@
         "path": "Surgery/Fluids.txt",
         "questions": [
           {
-            "id": "surgery__lecture__fluids__1__prkyragdl3",
+            "id": "surgery__lecture__fluids__1__vvmqllk145",
             "number": "1",
             "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
             "options": [
@@ -502,7 +373,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "surgery__lecture__fluids__2__z8etslnft3",
+            "id": "surgery__lecture__fluids__2__1bizdexdrv",
             "number": "2",
             "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
             "options": [
@@ -532,7 +403,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "surgery__lecture__fluids__3__9sg56um5ft",
+            "id": "surgery__lecture__fluids__3__if580q4vg5",
             "number": "3",
             "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
             "options": [
@@ -573,7 +444,7 @@
         "path": "Surgery/AI/Pancreatitis.txt",
         "questions": [
           {
-            "id": "surgery__ai__pancreatitis__1__pbptw40bez",
+            "id": "surgery__ai__pancreatitis__1__eks9vm8bs7",
             "number": "1",
             "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
             "options": [
@@ -603,7 +474,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__2__vr5seiph8m",
+            "id": "surgery__ai__pancreatitis__2__09oiq9ws1q",
             "number": "2",
             "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
             "options": [
@@ -633,7 +504,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__3__mn7o0el3mq",
+            "id": "surgery__ai__pancreatitis__3__si0coktkqn",
             "number": "3",
             "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
             "options": [
@@ -663,7 +534,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__4__gzhnod3b73",
+            "id": "surgery__ai__pancreatitis__4__qxgxskruif",
             "number": "4",
             "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
             "options": [
@@ -693,7 +564,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__5__n06xvzjrsv",
+            "id": "surgery__ai__pancreatitis__5__3lx4zras44",
             "number": "5",
             "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
             "options": [
@@ -723,7 +594,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__6__jg5ywymzrq",
+            "id": "surgery__ai__pancreatitis__6__iiyh51vc5b",
             "number": "6",
             "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
             "options": [
@@ -753,7 +624,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__7__yi70bnazi3",
+            "id": "surgery__ai__pancreatitis__7__c26rmky2do",
             "number": "7",
             "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
             "options": [
@@ -788,7 +659,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "surgery__lecture__fluids__1__prkyragdl3",
+        "id": "surgery__lecture__fluids__1__vvmqllk145",
         "number": "1",
         "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
         "options": [
@@ -818,7 +689,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "surgery__lecture__fluids__2__z8etslnft3",
+        "id": "surgery__lecture__fluids__2__1bizdexdrv",
         "number": "2",
         "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
         "options": [
@@ -848,7 +719,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "surgery__lecture__fluids__3__9sg56um5ft",
+        "id": "surgery__lecture__fluids__3__if580q4vg5",
         "number": "3",
         "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
         "options": [
@@ -878,7 +749,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "surgery__ai__pancreatitis__1__pbptw40bez",
+        "id": "surgery__ai__pancreatitis__1__eks9vm8bs7",
         "number": "1",
         "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
         "options": [
@@ -908,7 +779,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__2__vr5seiph8m",
+        "id": "surgery__ai__pancreatitis__2__09oiq9ws1q",
         "number": "2",
         "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
         "options": [
@@ -938,7 +809,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__3__mn7o0el3mq",
+        "id": "surgery__ai__pancreatitis__3__si0coktkqn",
         "number": "3",
         "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
         "options": [
@@ -968,7 +839,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__4__gzhnod3b73",
+        "id": "surgery__ai__pancreatitis__4__qxgxskruif",
         "number": "4",
         "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
         "options": [
@@ -998,7 +869,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__5__n06xvzjrsv",
+        "id": "surgery__ai__pancreatitis__5__3lx4zras44",
         "number": "5",
         "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
         "options": [
@@ -1028,7 +899,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__6__jg5ywymzrq",
+        "id": "surgery__ai__pancreatitis__6__iiyh51vc5b",
         "number": "6",
         "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
         "options": [
@@ -1058,7 +929,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__7__yi70bnazi3",
+        "id": "surgery__ai__pancreatitis__7__c26rmky2do",
         "number": "7",
         "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
         "options": [

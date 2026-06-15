@@ -254,6 +254,8 @@
       restoreGroupToOriginalPosition(subject.name, sectionType, group.id);
     }
 
+    saveChecklistStore();
+    saveProgressStore();
     rerenderAfterChecklistRelatedChange();
   }
 
@@ -292,6 +294,11 @@
     moveBtn.onclick = function(){
       hideDialog();
       setGroupCompleted(group.id, true, { moveBottom:true, countAsAnswered:true });
+      const found = findGroupById(group.id);
+      if(found){
+        const { subject, sectionType } = found;
+        moveGroupToBottomByInfo(subject.name, sectionType, group.id);
+      }
       showToast('تم تعليم العنصر كمكتمل ونقله للأسفل.', 'success');
     };
 
@@ -1053,6 +1060,7 @@
     const timerEl = el('exam-timer');
     if(timerEl) timerEl.classList.remove('hidden');
     state.secondsAlertPlayed = false;
+    prepareSecondsAudio();
 
     state.timerInterval = setInterval(() => {
       if(!state.currentExam || state.currentExam.submitted){
@@ -1579,13 +1587,16 @@ toggleFavorite = function(questionId){
         info.days.forEach(dayKey => {
           if(!dayKey) return;
           const ts = new Date(`${dayKey}T12:00:00`).getTime();
-          if(Number.isFinite(ts)) entries.push({ qid, ts, subjectName });
+          if(Number.isFinite(ts)) entries.push({ qid, ts, subjectName, dayKey });
         });
         return;
       }
 
       const legacyTs = Number(info.ts || 0);
-      if(legacyTs > 0) entries.push({ qid, ts: legacyTs, subjectName });
+      if(legacyTs > 0){
+        const dayKey = getPatchLocalDateKey(legacyTs);
+        entries.push({ qid, ts: legacyTs, subjectName, dayKey });
+      }
     });
 
     entries.sort((a,b) => a.ts - b.ts);
@@ -1626,26 +1637,51 @@ toggleFavorite = function(questionId){
 
     const filteredEntries = entries.filter(e => e.ts >= startTs && e.ts <= endTs);
 
-    if(!detailed){
-      const data = buckets.map(key => filteredEntries.filter(e => getBucketKey(e.ts) === key).length);
-      return {
-        labels,
-        series: [{ name: 'كل المواد', data, color: getMemorySingleLineColor() }],
-        caption: range.caption
-      };
-    }
+      if(!detailed){
+     const dataMap = new Map();
+     filteredEntries.forEach(e => {
+       const key = getBucketKey(e.ts);
+       const compositeKey = `${key}::${e.qid}`;
+       if(!dataMap.has(compositeKey)){
+         dataMap.set(compositeKey, true);
+       }
+     });
+     const data = buckets.map(key => {
+       let count = 0;
+       for(const compositeKey of dataMap.keys()){
+         if(compositeKey.startsWith(key + '::')) count++;
+       }
+       return count;
+     });
+     return {
+       labels,
+       series: [{ name: 'كل المواد', data, color: getMemorySingleLineColor() }],
+       caption: range.caption
+     };
+   }
 
-    const subjects = selectedSubjects && selectedSubjects.length
-      ? selectedSubjects.slice()
-      : Array.from(new Set(filteredEntries.map(e => e.subjectName))).sort();
+   const subjects = selectedSubjects && selectedSubjects.length
+     ? selectedSubjects.slice()
+     : Array.from(new Set(filteredEntries.map(e => e.subjectName))).sort();
 
-    const series = subjects.map(subject => ({
-      name: subject,
-      color: getSubjectColor(subject),
-      data: buckets.map(key => filteredEntries.filter(e => e.subjectName === subject && getBucketKey(e.ts) === key).length)
-    }));
+   const series = subjects.map(subject => ({
+     name: subject,
+     color: getSubjectColor(subject),
+     data: buckets.map(key => {
+       const dataMap = new Map();
+       filteredEntries.forEach(e => {
+         if(e.subjectName === subject && getBucketKey(e.ts) === key){
+           const compositeKey = `${key}::${e.qid}`;
+           if(!dataMap.has(compositeKey)){
+             dataMap.set(compositeKey, true);
+           }
+         }
+       });
+       return dataMap.size;
+     })
+   }));
 
-    return { labels, series, caption: range.caption };
+   return { labels, series, caption: range.caption };
   };
 
   drawMemoriesChart = function(canvas, labels, series){

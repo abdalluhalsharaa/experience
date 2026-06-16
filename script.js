@@ -132,7 +132,83 @@ function loadMemoryStores(){ state.questionsFirstSeen = loadJSON(STORAGE_KEYS.qu
 function saveChecklistStore(){ localStorage.setItem(STORAGE_KEYS.checklist, JSON.stringify(state.checklistCompleted)); }
 function loadChecklistStore(){ state.checklistCompleted = loadJSON(STORAGE_KEYS.checklist, {}); }
 function addProgressId(key, qid){ if(!state.progress[key]) state.progress[key]={questionIds:[]}; if(!state.progress[key].questionIds.includes(qid)) state.progress[key].questionIds.push(qid); }
+function getValidQuestionIdsForProgressKey(key){
+  const raw = String(key || '');
+  if(!raw || !raw.includes(':')) return null;
 
+  const colonIndex = raw.indexOf(':');
+  const type = raw.slice(0, colonIndex);
+  const rest = raw.slice(colonIndex + 1);
+
+  if(type === 'subject'){
+    const subject = state.subjects.find(s => s.name === rest);
+    if(!subject) return null;
+    return new Set((subject.allQuestions || []).map(q => q.id));
+  }
+
+  const slashIndex = rest.indexOf('/');
+  if(slashIndex === -1) return null;
+
+  const subjectName = rest.slice(0, slashIndex);
+  const groupName = rest.slice(slashIndex + 1);
+  const subject = state.subjects.find(s => s.name === subjectName);
+  if(!subject) return null;
+
+  let groups = [];
+  if(type === 'lecture' || type === 'lectures') groups = subject.lectures || [];
+  else if(type === 'year' || type === 'years') groups = subject.years || [];
+  else if(type === 'ai') groups = subject.ai || [];
+  else return null;
+
+  const group = groups.find(g => g.name === groupName);
+  if(!group) return null;
+
+  return new Set((group.questions || []).map(q => q.id));
+}
+
+function getNormalizedProgressIdsForKey(key){
+  const entry = state.progress[key] || { questionIds: [] };
+  const rawIds = Array.isArray(entry.questionIds) ? entry.questionIds : [];
+  const uniqueIds = Array.from(new Set(rawIds));
+  const validIds = getValidQuestionIdsForProgressKey(key);
+
+  if(!validIds) return uniqueIds;
+
+  return uniqueIds.filter(id => validIds.has(id));
+}
+
+function sanitizeProgressStoreForLoadedData(){
+  let changed = false;
+
+  Object.keys(state.progress || {}).forEach(key => {
+    const entry = state.progress[key];
+    const normalizedIds = getNormalizedProgressIdsForKey(key);
+
+    if(!entry || !Array.isArray(entry.questionIds)){
+      if(normalizedIds.length){
+        state.progress[key] = { questionIds: normalizedIds };
+      }else{
+        delete state.progress[key];
+      }
+      changed = true;
+      return;
+    }
+
+    const sameLength = entry.questionIds.length === normalizedIds.length;
+    const sameOrder = sameLength && entry.questionIds.every((id, idx) => id === normalizedIds[idx]);
+
+    if(!sameOrder){
+      if(normalizedIds.length){
+        state.progress[key] = Object.assign({}, entry, { questionIds: normalizedIds });
+      }else{
+        delete state.progress[key];
+      }
+      changed = true;
+    }
+  });
+
+  if(changed) saveProgressStore();
+}
 function normalizeSubjectPreferences(){ const ids=state.subjects.map(s=>s.id); state.subjectPreferences.order=(state.subjectPreferences.order||[]).filter(id=>ids.includes(id)); state.subjectPreferences.pinned=(state.subjectPreferences.pinned||[]).filter(id=>ids.includes(id)); ids.forEach(id=>{ if(!state.subjectPreferences.order.includes(id)) state.subjectPreferences.order.push(id); }); saveSubjectPreferences(); }
 function sortSubjects(list){ const orderMap=new Map(); (state.subjectPreferences.order||[]).forEach((id,idx)=>orderMap.set(id,idx)); const pinned=new Set(state.subjectPreferences.pinned||[]); return list.slice().sort((a,b)=>{ const ap=pinned.has(a.id)?1:0, bp=pinned.has(b.id)?1:0; if(ap!==bp) return bp-ap; const ao=orderMap.has(a.id)?orderMap.get(a.id):Number.MAX_SAFE_INTEGER; const bo=orderMap.has(b.id)?orderMap.get(b.id):Number.MAX_SAFE_INTEGER; if(ao!==bo) return ao-bo; return a.name.localeCompare(b.name,'en',{sensitivity:'base'}); }); }
 
@@ -194,7 +270,7 @@ function getSubjectTotalQuestions(subject, options = {}){
 function getSubjectAnsweredCount(subject, options = {}){
   const { scope = 'overview', respectVisibilitySettings = false } = options;
   const answeredSet = new Set();
-  const addKey = (key) => { const entry = state.progress[key]; if(entry && entry.questionIds) entry.questionIds.forEach(id=>answeredSet.add(id)); };
+  const addKey = (key) => { getNormalizedProgressIdsForKey(key).forEach(id => answeredSet.add(id)); };
   const settings = respectVisibilitySettings ? getSubjectVisibilitySettings(subject.id) : { lectures: true, years: scope === 'subject', ai: true };
 
   const includeLectures = scope === 'subject'
@@ -209,11 +285,12 @@ function getSubjectAnsweredCount(subject, options = {}){
     ? settings.ai !== false
     : (!isSectionExcluded('ai') && settings.ai !== false);
 
-  if(includeLectures) subject.lectures.forEach(g=> addKey(`lecture:${subject.name}/${g.name}`));
-  if(includeYears) subject.years.forEach(g=> addKey(`year:${subject.name}/${g.name}`));
-  if(includeAi) subject.ai.forEach(g=> addKey(`ai:${subject.name}/${g.name}`));
+  if(includeLectures) subject.lectures.forEach(g => addKey(`lecture:${subject.name}/${g.name}`));
+  if(includeYears) subject.years.forEach(g => addKey(`year:${subject.name}/${g.name}`));
+  if(includeAi) subject.ai.forEach(g => addKey(`ai:${subject.name}/${g.name}`));
 
-  return answeredSet.size;
+  const total = getSubjectTotalQuestions(subject, options);
+  return Math.min(answeredSet.size, total);
 }
 function getGlobalStats(){
   let totalQuestions = 0;
@@ -946,7 +1023,9 @@ function showLocation(subjectName, lectureName, batchName, pageNumber){ const pa
 function toggleFavorite(questionId){ const idx=state.favorites.indexOf(questionId); if(idx>-1) state.favorites.splice(idx,1); else state.favorites.push(questionId); saveFavorites(); if(state.currentExam && !state.currentExam.submitted) renderExam(); if(el('readonly-screen').classList.contains('active')) openReadonly(questionId); if(state.browseMode==='favorites') renderSubjects(); updateStatisticsIfOpen(); }
 
 function getGroupProgressKey(type, subjectName, groupName){ return type+':'+subjectName+'/'+groupName; }
-function getAnsweredCountForKey(key){ const entry=state.progress[key]||{questionIds:[]}; return new Set(entry.questionIds||[]).size; }
+function getAnsweredCountForKey(key){
+  return getNormalizedProgressIdsForKey(key).length;
+}
 function getSectionSummary(subject, type){ const groups = type==='lecture' ? subject.lectures : type==='ai' ? subject.ai : subject.years; const totalQuestions = groups.reduce((sum,g)=>sum+g.questions.length,0); let answered = 0; groups.forEach(g=>answered += getAnsweredCountForKey(getGroupProgressKey(type, subject.name, g.name))); const pct = totalQuestions ? Math.round((answered/totalQuestions)*100) : 0; return { groups, totalQuestions, answered, pct }; }
 function resetProgressFull(){ askConfirm('هل تريد إعادة ضبط جميع البيانات (جميع المواد)؟ لا يمكن التراجع عن هذا الإجراء.', ()=>{ state.progress={}; saveProgressStore(); showToast('تمت إعادة ضبط جميع بيانات التقدم.','success'); updateStatisticsIfOpen(); renderMemories(); }); }
 
@@ -1492,15 +1571,16 @@ async function scanSubjectFolder(dirItem){ const items=await listRepoDirectory(d
   if(lectureFiles.length===0 && aiFiles.length===0 && !aiFolder){ return {id:subjectId,name:dirItem.name,lectures:[],ai:[],years:[],allQuestions:[],totalQuestions:0,totalLectures:0,hasAiFolder:false}; }
   const lectures=[]; const ai=[]; let counter=1; for(const f of lectureFiles){ const g=await buildLectureGroupFromFile(f,dirItem.name,subjectId,'lecture',counter); if(g){ counter+=g.questions.length; lectures.push(g);} } for(const f of aiFiles){ const g=await buildLectureGroupFromFile(f,dirItem.name,subjectId,'ai',counter); if(g){ counter+=g.questions.length; ai.push(g);} } const all=lectures.flatMap(g=>g.questions).concat(ai.flatMap(g=>g.questions)); const yearsMap=new Map(); all.forEach(q=>{ const batch=String(q.batchName||'').trim(); if(!batch) return; if(!yearsMap.has(batch)) yearsMap.set(batch,[]); yearsMap.get(batch).push(Object.assign({},q,{sourceType:'year',originalSourceType:q.sourceType})); }); const years=Array.from(yearsMap.entries()).sort((a,b)=>a[0].localeCompare(b[0],'en',{sensitivity:'base'})).map(([name,questions])=>({id:subjectId+'__year__'+slugify(name),name,type:'year',subjectName:dirItem.name,questions})); return {id:subjectId,name:dirItem.name,lectures,ai,years,allQuestions:all,totalQuestions:all.length,totalLectures:lectures.length+ai.length+years.length,hasAiFolder:!!aiFolder}; }
 async function loadData(){
-  setEmptyText('التحميل جارٍ ...','⏳');
-  state.subjects=[];
-  state.allQuestions=[];
+  setEmptyText('التحميل جارٍ ...','🐦‍🔥');
+  state.subjects = [];
+  state.allQuestions = [];
 
   const jsonPayload = await tryLoadJsonData();
   if(jsonPayload && Array.isArray(jsonPayload.subjects) && jsonPayload.subjects.length){
     state.subjects = sortSubjects(jsonPayload.subjects);
     normalizeSubjectPreferences();
-    state.allQuestions = state.subjects.flatMap(s=>s.allQuestions);
+    state.allQuestions = state.subjects.flatMap(s => s.allQuestions);
+    sanitizeProgressStoreForLoadedData();
     populateSearchFilter();
     renderSubjects();
     renderChecklist();
@@ -1509,25 +1589,32 @@ async function loadData(){
     return;
   }
 
-  state.discoveredRepo=await discoverRepository();
-  if(!state.discoveredRepo){ renderSubjects(); renderChecklist(); return; }
-  const root=await listRepoDirectory('');
-  const subjectDirs=root.filter(item=>item.type==='dir' && !IGNORE_ROOT_DIRS.has(item.name.toLowerCase()));
-  const scanned=[];
+  state.discoveredRepo = await discoverRepository();
+  if(!state.discoveredRepo){
+    renderSubjects();
+    renderChecklist();
+    return;
+  }
+
+  const root = await listRepoDirectory('');
+  const subjectDirs = root.filter(item => item.type === 'dir' && !IGNORE_ROOT_DIRS.has(item.name.toLowerCase()));
+  const scanned = [];
+
   for(const dir of subjectDirs){
-    const s=await scanSubjectFolder(dir);
+    const s = await scanSubjectFolder(dir);
     if(s) scanned.push(s);
   }
-  state.subjects=sortSubjects(scanned);
+
+  state.subjects = sortSubjects(scanned);
   normalizeSubjectPreferences();
-  state.allQuestions=state.subjects.flatMap(s=>s.allQuestions);
+  state.allQuestions = state.subjects.flatMap(s => s.allQuestions);
+  sanitizeProgressStoreForLoadedData();
   populateSearchFilter();
   renderSubjects();
   renderChecklist();
   updateStatisticsIfOpen();
   renderMemories();
 }
-
 window.addEventListener('DOMContentLoaded', async ()=>{
   loadSettings(); loadProgress(); loadFavorites(); loadWrongQuestions(); loadSubjectPreferences(); loadStatsExclusions(); loadSubjectStatsSettings(); loadChecklistStore(); loadMemoryStores();
   applySettings();

@@ -175,7 +175,7 @@
       try{ renderSelectionScreenWithEnhancements(); }catch(e){}
     }
   }
-      function syncAutoCompletedLectures(){
+        function syncAutoCompletedLectures(){
     let changed = false;
 
     function syncGroup(subject, group, sectionType, progressKey){
@@ -186,14 +186,6 @@
       if(completed){
         if(!state.checklistCompleted[group.id]){
           state.checklistCompleted[group.id] = true;
-          changed = true;
-        }
-
-        const key = getGroupOrderKey(subject.name, sectionType);
-        const currentOrder = Array.isArray(state.groupPreferences[key]) ? state.groupPreferences[key].slice() : getOriginalOrderIds(subject.name, sectionType);
-        const isLast = currentOrder.length > 0 && currentOrder[currentOrder.length - 1] === group.id;
-
-        if(!isLast){
           moveGroupToBottomByInfo(subject.name, sectionType, group.id);
           changed = true;
         }
@@ -232,6 +224,7 @@
 
     return changed;
   }
+
   function setGroupCompleted(groupId, completed, opts){
     const options = Object.assign({ moveBottom:false, countAsAnswered:false, resetProgress:false }, opts || {});
     const found = findGroupById(groupId);
@@ -423,11 +416,9 @@
   function buildEnhancedSelectionList(){
     const list = el('selection-list');
     if(!list) return;
-
     const meta = state.currentSelectionMeta || {};
     const subjectName = state.currentSubject?.name || (state.currentGroups[0]?.subjectName) || 'unknown';
     const sectionType = normalizeSectionType(meta.sectionType || state.currentGroups[0]?.type);
-
     state.currentGroups = ensureGroupOrder(state.currentGroups || [], sectionType, subjectName);
     const t = theme();
     list.innerHTML = '';
@@ -436,88 +427,48 @@
       const icon = group.type === 'ai' ? t.icons.ai : (group.type === 'year' ? t.icons.years : t.icons.lectures);
       const done = !!state.checklistCompleted[group.id];
       const item = document.createElement('div');
-
       item.className = 'selection-item selection-group-item' + (done ? ' group-completed' : '') + (state.selectedGroups.includes(idx) ? ' selected' : '');
-      item.draggable = false;
+      item.draggable = true;
       item.dataset.groupId = group.id;
-      item.setAttribute('data-group-name', (group.name + ' ' + (group.subjectName || '')).toLowerCase());
+      item.setAttribute('data-group-name', (group.name + ' ' + (group.subjectName||'')).toLowerCase());
       item.innerHTML = `
-        <input type="checkbox" id="group-${idx}" ${state.selectedGroups.includes(idx) ? 'checked' : ''} onchange="toggleGroupSelection(${idx})">
+        <input type="checkbox" id="group-${idx}" ${state.selectedGroups.includes(idx)?'checked':''} onchange="toggleGroupSelection(${idx})">
         <label for="group-${idx}" style="width:100%; cursor:pointer;">
-          <strong class="group-title ${done ? 'done-title' : ''}">${icon} ${escapeHtml(group.name)}</strong><br>
-          <small class="group-sub ${done ? 'done-sub' : ''}" style="color:var(--text-muted)">${group.questions.length} questions</small>
+          <strong class="group-title ${done?'done-title':''}">${icon} ${escapeHtml(group.name)}</strong><br>
+          <small class="group-sub ${done?'done-sub':''}" style="color:var(--text-muted)">${group.questions.length} questions</small>
         </label>
         <div class="selection-item-group-actions">
-          <button class="selection-complete-btn ${done ? 'done' : ''}" title="تعليم كمكتمل أو إعادة الدراسة" onclick="event.stopPropagation(); confirmCompleteGroup(${idx})">${done ? '🔁' : '✅'}</button>
+          <button class="selection-complete-btn ${done?'done':''}" title="تعليم كمكتمل أو إعادة الدراسة" onclick="event.stopPropagation(); confirmCompleteGroup(${idx})">${done ? '🔁' : '✅'}</button>
           <span class="selection-drag-handle" title="اسحب لإعادة الترتيب">↕️</span>
         </div>`;
 
       item.addEventListener('click', function(event){
-        if(event.target.closest('input') || event.target.closest('label') || event.target.closest('.selection-complete-btn') || event.target.closest('.selection-drag-handle')) return;
+        if(event.target.closest('input') || event.target.closest('label') || event.target.closest('.selection-complete-btn')) return;
         const cb = item.querySelector('input');
         cb.checked = !cb.checked;
         toggleGroupSelection(idx);
       });
 
-      const handle = item.querySelector('.selection-drag-handle');
-
-      function enableDrag(){
-        state.selectionDragGroupId = group.id;
-        item.draggable = true;
-      }
-
-      function disableDrag(){
-        if(state.selectionDragGroupId === group.id) state.selectionDragGroupId = null;
-        item.draggable = false;
-      }
-
-      if(handle){
-        handle.addEventListener('mousedown', enableDrag);
-        handle.addEventListener('touchstart', enableDrag, { passive:true });
-        handle.addEventListener('mouseup', disableDrag);
-        handle.addEventListener('mouseleave', disableDrag);
-        handle.addEventListener('touchend', disableDrag, { passive:true });
-        handle.addEventListener('touchcancel', disableDrag, { passive:true });
-      }
-
       item.addEventListener('dragstart', e => {
-        if(state.selectionDragGroupId !== group.id){
-          e.preventDefault();
-          return;
-        }
         item.classList.add('dragging');
-        e.dataTransfer.effectAllowed = 'move';
         e.dataTransfer.setData('text/plain', group.id);
       });
-
       item.addEventListener('dragend', () => {
         item.classList.remove('dragging');
-        document.querySelectorAll('#selection-list .selection-group-item').forEach(x => x.classList.remove('drag-over'));
-        disableDrag();
+        document.querySelectorAll('#selection-list .selection-group-item').forEach(x=>x.classList.remove('drag-over'));
       });
-
       item.addEventListener('dragover', e => {
         e.preventDefault();
-        e.dataTransfer.dropEffect = 'move';
         item.classList.add('drag-over');
       });
-
-      item.addEventListener('dragleave', () => {
-        item.classList.remove('drag-over');
-      });
-
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
       item.addEventListener('drop', e => {
         e.preventDefault();
         item.classList.remove('drag-over');
-
         const draggedId = e.dataTransfer.getData('text/plain');
-        if(!draggedId || draggedId === group.id) return;
-
         const rect = item.getBoundingClientRect();
         const afterTarget = e.clientY > (rect.top + rect.height / 2);
-
         reorderGroupIds(subjectName, sectionType, draggedId, group.id, afterTarget);
-        state.currentGroups = ensureGroupOrder(state.currentGroups || [], sectionType, subjectName);
         renderSelectionScreenWithEnhancements();
       });
 
@@ -559,6 +510,9 @@
           },
           onCancel:()=>{}
         });
+        setTimeout(() => {
+          removeDialogExtras();
+        }, 0);
       },
       onCancel:()=>{}
     });
@@ -567,7 +521,7 @@
       const actions = document.querySelector('#dialog-overlay .dialog-actions');
       if(!actions) return;
 
-      actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
+      removeDialogExtras();
 
       const confirmBtn = document.getElementById('dialog-confirm');
       const cancelBtn = document.getElementById('dialog-cancel');
@@ -592,6 +546,9 @@
           },
           onCancel:()=>{}
         });
+        setTimeout(() => {
+          removeDialogExtras();
+        }, 0);
       };
 
       if(cancelBtn) actions.appendChild(cancelBtn);

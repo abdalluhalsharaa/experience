@@ -541,6 +541,43 @@
         ]
       },
       {
+        "id": "neurosurgery__lecture__kook",
+        "name": "Kook",
+        "type": "lecture",
+        "subjectName": "Neurosurgery",
+        "path": "Neurosurgery/Kook.txt",
+        "questions": [
+          {
+            "id": "neurosurgery__lecture__kook__1__lqdv6s",
+            "number": "1",
+            "text": "Which ?",
+            "options": [
+              "abdullah",
+              "abdullah 2",
+              "abdullah 3",
+              "abdullah 4"
+            ],
+            "originalOptions": [
+              "abdullah",
+              "abdullah 2",
+              "abdullah 3",
+              "abdullah 4"
+            ],
+            "correctAnswer": "C) abdullah 3",
+            "correctAnswerText": "abdullah 3",
+            "correctIndex": 0,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Kook",
+            "groupName": "Kook",
+            "sourceType": "lecture"
+          }
+        ]
+      },
+      {
         "id": "neurosurgery__lecture__subarachnoid-haemorrhage",
         "name": "Subarachnoid Haemorrhage",
         "type": "lecture",
@@ -918,6 +955,34 @@
         "sourceType": "lecture"
       },
       {
+        "id": "neurosurgery__lecture__kook__1__lqdv6s",
+        "number": "1",
+        "text": "Which ?",
+        "options": [
+          "abdullah",
+          "abdullah 2",
+          "abdullah 3",
+          "abdullah 4"
+        ],
+        "originalOptions": [
+          "abdullah",
+          "abdullah 2",
+          "abdullah 3",
+          "abdullah 4"
+        ],
+        "correctAnswer": "C) abdullah 3",
+        "correctAnswerText": "abdullah 3",
+        "correctIndex": 0,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Kook",
+        "groupName": "Kook",
+        "sourceType": "lecture"
+      },
+      {
         "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__ezq87w",
         "number": "1",
         "text": "Subarachnoid Haemorrhage What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?",
@@ -1086,8 +1151,8 @@
         "sourceType": "lecture"
       }
     ],
-    "totalQuestions": 13,
-    "totalLectures": 2,
+    "totalQuestions": 14,
+    "totalLectures": 3,
     "hasAiFolder": false
   },
   {

@@ -11,7 +11,7 @@
         "path": "Internal/RS.txt",
         "questions": [
           {
-            "id": "internal__lecture__rs__1__eor59jbzcz",
+            "id": "internal__lecture__rs__1__g1mms7",
             "number": "1",
             "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
             "options": [
@@ -41,7 +41,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "internal__lecture__rs__2__8hi5rcs5xx",
+            "id": "internal__lecture__rs__2__3fhsv5",
             "number": "2",
             "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
             "options": [
@@ -77,7 +77,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "internal__lecture__rs__1__eor59jbzcz",
+        "id": "internal__lecture__rs__1__g1mms7",
         "number": "1",
         "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
         "options": [
@@ -107,7 +107,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "internal__lecture__rs__2__8hi5rcs5xx",
+        "id": "internal__lecture__rs__2__3fhsv5",
         "number": "2",
         "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
         "options": [
@@ -153,7 +153,7 @@
         "path": "Neuromedicine/Headache.txt",
         "questions": [
           {
-            "id": "neuromedicine__lecture__headache__1__icge69bcvu",
+            "id": "neuromedicine__lecture__headache__1__5nvp87",
             "number": "1",
             "text": "Headache What is the most likely diagnosis?",
             "options": [
@@ -181,7 +181,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neuromedicine__lecture__headache__2__b48xfx7krn",
+            "id": "neuromedicine__lecture__headache__2__qro60g",
             "number": "2",
             "text": "What is the treatment for temporal arteritis?",
             "options": [
@@ -209,7 +209,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neuromedicine__lecture__headache__3__89ywjl1wtx",
+            "id": "neuromedicine__lecture__headache__3__ayu441",
             "number": "3",
             "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
             "options": [
@@ -243,7 +243,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "neuromedicine__lecture__headache__1__icge69bcvu",
+        "id": "neuromedicine__lecture__headache__1__5nvp87",
         "number": "1",
         "text": "Headache What is the most likely diagnosis?",
         "options": [
@@ -271,7 +271,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neuromedicine__lecture__headache__2__b48xfx7krn",
+        "id": "neuromedicine__lecture__headache__2__qro60g",
         "number": "2",
         "text": "What is the treatment for temporal arteritis?",
         "options": [
@@ -299,7 +299,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neuromedicine__lecture__headache__3__89ywjl1wtx",
+        "id": "neuromedicine__lecture__headache__3__ayu441",
         "number": "3",
         "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
         "options": [
@@ -343,7 +343,7 @@
         "path": "Neurosurgery/Back Pain.txt",
         "questions": [
           {
-            "id": "neurosurgery__lecture__back-pain__1__x4wgtlqtve",
+            "id": "neurosurgery__lecture__back-pain__1__oglxqw",
             "number": "1",
             "text": "Back Pain Which of the following is an accurate description of mechanical back pain?",
             "options": [
@@ -371,7 +371,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__back-pain__2__lgytq4yruk",
+            "id": "neurosurgery__lecture__back-pain__2__b5s0az",
             "number": "2",
             "text": "A 45-year-old worker presents with a 4-week history of lower back pain. The pain is isolated to his lower back and he is not experiencing any signs of radiculopathy. What is the best next step in management?",
             "options": [
@@ -399,7 +399,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__back-pain__3__ejm1lf1tce",
+            "id": "neurosurgery__lecture__back-pain__3__vh3ohq",
             "number": "3",
             "text": "On MRI of the lumbar spine, a disc herniation at L4/L5 is identified compressing a nerve root. What is the most likely level affected?",
             "options": [
@@ -427,7 +427,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__back-pain__4__yv7ls8i3p2",
+            "id": "neurosurgery__lecture__back-pain__4__ukmevo",
             "number": "4",
             "text": "What are the most common symptoms of cervical myelopathy?",
             "options": [
@@ -455,7 +455,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__back-pain__5__168h20m1i3",
+            "id": "neurosurgery__lecture__back-pain__5__wfiwkv",
             "number": "5",
             "text": "A patient presents with loss of sensation below the umbilicus, paraplegia, and stool/urine incontinence. What is the most likely level of injury?",
             "options": [
@@ -483,7 +483,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__back-pain__6__kg8dgifhfn",
+            "id": "neurosurgery__lecture__back-pain__6__18u3d0",
             "number": "6",
             "text": "Which of the following tests does NOT evaluate spinal nerve root compression?",
             "options": [
@@ -511,7 +511,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__back-pain__7__zproiunpip",
+            "id": "neurosurgery__lecture__back-pain__7__l0ug24",
             "number": "7",
             "text": "Which nerve root is affected by a C5/C6 disc herniation?",
             "options": [
@@ -548,7 +548,7 @@
         "path": "Neurosurgery/Subarachnoid Haemorrhage.txt",
         "questions": [
           {
-            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__prev73wqff",
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__ezq87w",
             "number": "1",
             "text": "Subarachnoid Haemorrhage What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?",
             "options": [
@@ -576,7 +576,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__2__kj53zsgam1",
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__2__xpwzgg",
             "number": "2",
             "text": "A 62-year-old female patient was admitted to the ICU with aneurysmal SAH. 6 days later, she developed sudden aphasia and right-sided hemiplegia. What is the most likely cause?",
             "options": [
@@ -604,7 +604,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__3__q5ex7qe1uw",
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__3__lo1p2q",
             "number": "3",
             "text": "Which of the following is WRONG regarding intracranial aneurysms?",
             "options": [
@@ -632,7 +632,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__4__mn5du37tj7",
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__4__f9735r",
             "number": "4",
             "text": "A patient with SAH has GCS of 13-14 with no major deficit. What is the WFNS grade?",
             "options": [
@@ -660,7 +660,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__5__55td9c1t7r",
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__5__cl26kn",
             "number": "5",
             "text": "All of the following are in favor of surgical clipping over coiling in the management of intracranial aneurysms EXCEPT:",
             "options": [
@@ -688,7 +688,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__6__yi9wygt5z4",
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__6__c4eziy",
             "number": "6",
             "text": "What is the treatment for vasospasm after SAH?",
             "options": [
@@ -722,7 +722,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "neurosurgery__lecture__back-pain__1__x4wgtlqtve",
+        "id": "neurosurgery__lecture__back-pain__1__oglxqw",
         "number": "1",
         "text": "Back Pain Which of the following is an accurate description of mechanical back pain?",
         "options": [
@@ -750,7 +750,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__back-pain__2__lgytq4yruk",
+        "id": "neurosurgery__lecture__back-pain__2__b5s0az",
         "number": "2",
         "text": "A 45-year-old worker presents with a 4-week history of lower back pain. The pain is isolated to his lower back and he is not experiencing any signs of radiculopathy. What is the best next step in management?",
         "options": [
@@ -778,7 +778,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__back-pain__3__ejm1lf1tce",
+        "id": "neurosurgery__lecture__back-pain__3__vh3ohq",
         "number": "3",
         "text": "On MRI of the lumbar spine, a disc herniation at L4/L5 is identified compressing a nerve root. What is the most likely level affected?",
         "options": [
@@ -806,7 +806,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__back-pain__4__yv7ls8i3p2",
+        "id": "neurosurgery__lecture__back-pain__4__ukmevo",
         "number": "4",
         "text": "What are the most common symptoms of cervical myelopathy?",
         "options": [
@@ -834,7 +834,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__back-pain__5__168h20m1i3",
+        "id": "neurosurgery__lecture__back-pain__5__wfiwkv",
         "number": "5",
         "text": "A patient presents with loss of sensation below the umbilicus, paraplegia, and stool/urine incontinence. What is the most likely level of injury?",
         "options": [
@@ -862,7 +862,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__back-pain__6__kg8dgifhfn",
+        "id": "neurosurgery__lecture__back-pain__6__18u3d0",
         "number": "6",
         "text": "Which of the following tests does NOT evaluate spinal nerve root compression?",
         "options": [
@@ -890,7 +890,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__back-pain__7__zproiunpip",
+        "id": "neurosurgery__lecture__back-pain__7__l0ug24",
         "number": "7",
         "text": "Which nerve root is affected by a C5/C6 disc herniation?",
         "options": [
@@ -918,7 +918,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__prev73wqff",
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__ezq87w",
         "number": "1",
         "text": "Subarachnoid Haemorrhage What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?",
         "options": [
@@ -946,7 +946,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__2__kj53zsgam1",
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__2__xpwzgg",
         "number": "2",
         "text": "A 62-year-old female patient was admitted to the ICU with aneurysmal SAH. 6 days later, she developed sudden aphasia and right-sided hemiplegia. What is the most likely cause?",
         "options": [
@@ -974,7 +974,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__3__q5ex7qe1uw",
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__3__lo1p2q",
         "number": "3",
         "text": "Which of the following is WRONG regarding intracranial aneurysms?",
         "options": [
@@ -1002,7 +1002,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__4__mn5du37tj7",
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__4__f9735r",
         "number": "4",
         "text": "A patient with SAH has GCS of 13-14 with no major deficit. What is the WFNS grade?",
         "options": [
@@ -1030,7 +1030,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__5__55td9c1t7r",
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__5__cl26kn",
         "number": "5",
         "text": "All of the following are in favor of surgical clipping over coiling in the management of intracranial aneurysms EXCEPT:",
         "options": [
@@ -1058,7 +1058,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__6__yi9wygt5z4",
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__6__c4eziy",
         "number": "6",
         "text": "What is the treatment for vasospasm after SAH?",
         "options": [
@@ -1102,7 +1102,7 @@
         "path": "Surgery/Fluids.txt",
         "questions": [
           {
-            "id": "surgery__lecture__fluids__1__jyllgwy4cn",
+            "id": "surgery__lecture__fluids__1__cvoiz0",
             "number": "1",
             "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
             "options": [
@@ -1132,7 +1132,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "surgery__lecture__fluids__2__lw5i8r27uq",
+            "id": "surgery__lecture__fluids__2__eykfbt",
             "number": "2",
             "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
             "options": [
@@ -1162,7 +1162,7 @@
             "sourceType": "lecture"
           },
           {
-            "id": "surgery__lecture__fluids__3__q1ustrpb7e",
+            "id": "surgery__lecture__fluids__3__bclkl0",
             "number": "3",
             "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
             "options": [
@@ -1203,7 +1203,7 @@
         "path": "Surgery/AI/Pancreatitis.txt",
         "questions": [
           {
-            "id": "surgery__ai__pancreatitis__1__qzosv90fgd",
+            "id": "surgery__ai__pancreatitis__1__r3kge",
             "number": "1",
             "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
             "options": [
@@ -1233,7 +1233,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__2__cfbeqa2up8",
+            "id": "surgery__ai__pancreatitis__2__8xuesk",
             "number": "2",
             "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
             "options": [
@@ -1263,7 +1263,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__3__wd8yvn406j",
+            "id": "surgery__ai__pancreatitis__3__45gu1i",
             "number": "3",
             "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
             "options": [
@@ -1293,7 +1293,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__4__9vvz7evtma",
+            "id": "surgery__ai__pancreatitis__4__45wg0l",
             "number": "4",
             "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
             "options": [
@@ -1323,7 +1323,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__5__92xh9b4myp",
+            "id": "surgery__ai__pancreatitis__5__q94gse",
             "number": "5",
             "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
             "options": [
@@ -1353,7 +1353,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__6__oip674u8io",
+            "id": "surgery__ai__pancreatitis__6__ajqz14",
             "number": "6",
             "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
             "options": [
@@ -1383,7 +1383,7 @@
             "sourceType": "ai"
           },
           {
-            "id": "surgery__ai__pancreatitis__7__3uh7eq1uej",
+            "id": "surgery__ai__pancreatitis__7__ks54uh",
             "number": "7",
             "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
             "options": [
@@ -1418,7 +1418,7 @@
     "years": [],
     "allQuestions": [
       {
-        "id": "surgery__lecture__fluids__1__jyllgwy4cn",
+        "id": "surgery__lecture__fluids__1__cvoiz0",
         "number": "1",
         "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
         "options": [
@@ -1448,7 +1448,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "surgery__lecture__fluids__2__lw5i8r27uq",
+        "id": "surgery__lecture__fluids__2__eykfbt",
         "number": "2",
         "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
         "options": [
@@ -1478,7 +1478,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "surgery__lecture__fluids__3__q1ustrpb7e",
+        "id": "surgery__lecture__fluids__3__bclkl0",
         "number": "3",
         "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
         "options": [
@@ -1508,7 +1508,7 @@
         "sourceType": "lecture"
       },
       {
-        "id": "surgery__ai__pancreatitis__1__qzosv90fgd",
+        "id": "surgery__ai__pancreatitis__1__r3kge",
         "number": "1",
         "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
         "options": [
@@ -1538,7 +1538,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__2__cfbeqa2up8",
+        "id": "surgery__ai__pancreatitis__2__8xuesk",
         "number": "2",
         "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
         "options": [
@@ -1568,7 +1568,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__3__wd8yvn406j",
+        "id": "surgery__ai__pancreatitis__3__45gu1i",
         "number": "3",
         "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
         "options": [
@@ -1598,7 +1598,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__4__9vvz7evtma",
+        "id": "surgery__ai__pancreatitis__4__45wg0l",
         "number": "4",
         "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
         "options": [
@@ -1628,7 +1628,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__5__92xh9b4myp",
+        "id": "surgery__ai__pancreatitis__5__q94gse",
         "number": "5",
         "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
         "options": [
@@ -1658,7 +1658,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__6__oip674u8io",
+        "id": "surgery__ai__pancreatitis__6__ajqz14",
         "number": "6",
         "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
         "options": [
@@ -1688,7 +1688,7 @@
         "sourceType": "ai"
       },
       {
-        "id": "surgery__ai__pancreatitis__7__3uh7eq1uej",
+        "id": "surgery__ai__pancreatitis__7__ks54uh",
         "number": "7",
         "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
         "options": [

@@ -5,7 +5,15 @@ const path = require('path');
 function slugify(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]+/g, '-').replace(/^-+|-+$/g, '') || 'item';
 }
-
+function hashString(input) {
+  let h = 0;
+  const s = String(input || '');
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h) + s.charCodeAt(i);
+    h |= 0;
+  }
+  return Math.abs(h).toString(36);
+}
 function stripOptionPrefix(text) {
   return String(text || '').replace(/^[A-E][\)\.\-]\s*/i, '').trim();
 }
@@ -129,7 +137,7 @@ function parseQuestionFile(raw, meta) {
       if (idx >= 0 && options[idx]) return options[idx];
       return stripOptionPrefix(correctAnswer);
     })();
-    const id = [slugify(meta.subjectName), slugify(meta.sourceType), slugify(meta.lectureName), slugify(questionNumber), Math.random().toString(36).slice(2, 12)].join('__');
+    const id = [slugify(meta.subjectName), slugify(meta.sourceType), slugify(meta.lectureName), slugify(questionNumber), hashString(questionText).slice(0, 10)].join('__');
     questions.push({
       id,
       number: questionNumber,

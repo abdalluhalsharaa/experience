@@ -1,1 +1,6 @@
 Which ?
+A) abdullah
+B) abdullah 2
+C) abdullah 3
+D) abdullah 4
+Correct Answer: C) abdullah 3

@@ -574,6 +574,34 @@
             "lectureName": "Kook",
             "groupName": "Kook",
             "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__kook__2__ki6c3v",
+            "number": "2",
+            "text": "How ajah djdj ?",
+            "options": [
+              "u",
+              "L",
+              "M",
+              "R"
+            ],
+            "originalOptions": [
+              "u",
+              "L",
+              "M",
+              "R"
+            ],
+            "correctAnswer": "C) M",
+            "correctAnswerText": "M",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Kook",
+            "groupName": "Kook",
+            "sourceType": "lecture"
           }
         ]
       },
@@ -983,6 +1011,34 @@
         "sourceType": "lecture"
       },
       {
+        "id": "neurosurgery__lecture__kook__2__ki6c3v",
+        "number": "2",
+        "text": "How ajah djdj ?",
+        "options": [
+          "u",
+          "L",
+          "M",
+          "R"
+        ],
+        "originalOptions": [
+          "u",
+          "L",
+          "M",
+          "R"
+        ],
+        "correctAnswer": "C) M",
+        "correctAnswerText": "M",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Kook",
+        "groupName": "Kook",
+        "sourceType": "lecture"
+      },
+      {
         "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__ezq87w",
         "number": "1",
         "text": "Subarachnoid Haemorrhage What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?",
@@ -1151,7 +1207,7 @@
         "sourceType": "lecture"
       }
     ],
-    "totalQuestions": 14,
+    "totalQuestions": 15,
     "totalLectures": 3,
     "hasAiFolder": false
   },

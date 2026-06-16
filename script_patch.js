@@ -240,25 +240,34 @@
 
     if(completed){
       state.checklistCompleted[group.id] = true;
+
       if(options.countAsAnswered){
         (group.questions || []).forEach(q => addProgressIdsForQuestion(q));
       }
+
       if(options.moveBottom){
         moveGroupToBottomByInfo(subject.name, sectionType, group.id);
+        if(Array.isArray(state.currentGroups) && state.currentGroups.length){
+          state.currentGroups = ensureGroupOrder(state.currentGroups, sectionType, subject.name);
+        }
       }
     } else {
       delete state.checklistCompleted[group.id];
+
       if(options.resetProgress){
         (group.questions || []).forEach(q => removeProgressIdsForQuestion(q));
       }
+
       restoreGroupToOriginalPosition(subject.name, sectionType, group.id);
+      if(Array.isArray(state.currentGroups) && state.currentGroups.length){
+        state.currentGroups = ensureGroupOrder(state.currentGroups, sectionType, subject.name);
+      }
     }
 
     saveChecklistStore();
     saveProgressStore();
     rerenderAfterChecklistRelatedChange();
   }
-
   function markGroupsCompletedBulk(groups){
     groups.forEach(group => {
       state.checklistCompleted[group.id] = true;
@@ -284,27 +293,29 @@
   }
 
   function appendMoveToBottomButton(group){
-  const actions = document.querySelector('#dialog-overlay .dialog-actions');
-  if(!actions) return;
-  actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
+    const actions = document.querySelector('#dialog-overlay .dialog-actions');
+    if(!actions) return;
+    actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
 
-  const moveBtn = document.createElement('button');
-  moveBtn.className = 'btn-primary dialog-extra-btn';
-  moveBtn.textContent = 'نعم ونقلها للأسفل';
-  moveBtn.onclick = function(){
-    hideDialog();
-    const found = findGroupById(group.id);
-    if(found){
-      const { subject, sectionType } = found;
-      moveGroupToBottomByInfo(subject.name, sectionType, group.id);
-    }
-    setGroupCompleted(group.id, true, { moveBottom:true, countAsAnswered:true });
-    showToast('تم تعليم العنصر كمكتمل ونقله للأسفل.', 'success');
-  };
+    const moveBtn = document.createElement('button');
+    moveBtn.className = 'btn-primary dialog-extra-btn';
+    moveBtn.textContent = 'نعم ونقلها للأسفل';
+    moveBtn.onclick = function(){
+      hideDialog();
+      setGroupCompleted(group.id, true, { moveBottom:true, countAsAnswered:true });
+      const found = findGroupById(group.id);
+      if(found){
+        const { subject, sectionType } = found;
+        if(Array.isArray(state.currentGroups) && state.currentGroups.length){
+          state.currentGroups = ensureGroupOrder(state.currentGroups, sectionType, subject.name);
+        }
+      }
+      if(typeof renderSelectionScreenWithEnhancements === 'function') renderSelectionScreenWithEnhancements();
+      showToast('تم تعليم العنصر كمكتمل ونقله للأسفل.', 'success');
+    };
 
-  actions.appendChild(moveBtn);
-}
-
+    actions.appendChild(moveBtn);
+  }
   window.confirmCompleteGroup = function(idx){
     const group = (state.currentGroups || [])[idx];
     if(!group) return;
@@ -412,9 +423,11 @@
   function buildEnhancedSelectionList(){
     const list = el('selection-list');
     if(!list) return;
+
     const meta = state.currentSelectionMeta || {};
     const subjectName = state.currentSubject?.name || (state.currentGroups[0]?.subjectName) || 'unknown';
     const sectionType = normalizeSectionType(meta.sectionType || state.currentGroups[0]?.type);
+
     state.currentGroups = ensureGroupOrder(state.currentGroups || [], sectionType, subjectName);
     const t = theme();
     list.innerHTML = '';
@@ -423,55 +436,94 @@
       const icon = group.type === 'ai' ? t.icons.ai : (group.type === 'year' ? t.icons.years : t.icons.lectures);
       const done = !!state.checklistCompleted[group.id];
       const item = document.createElement('div');
+
       item.className = 'selection-item selection-group-item' + (done ? ' group-completed' : '') + (state.selectedGroups.includes(idx) ? ' selected' : '');
-      item.draggable = true;
+      item.draggable = false;
       item.dataset.groupId = group.id;
-      item.setAttribute('data-group-name', (group.name + ' ' + (group.subjectName||'')).toLowerCase());
+      item.setAttribute('data-group-name', (group.name + ' ' + (group.subjectName || '')).toLowerCase());
       item.innerHTML = `
-        <input type="checkbox" id="group-${idx}" ${state.selectedGroups.includes(idx)?'checked':''} onchange="toggleGroupSelection(${idx})">
+        <input type="checkbox" id="group-${idx}" ${state.selectedGroups.includes(idx) ? 'checked' : ''} onchange="toggleGroupSelection(${idx})">
         <label for="group-${idx}" style="width:100%; cursor:pointer;">
-          <strong class="group-title ${done?'done-title':''}">${icon} ${escapeHtml(group.name)}</strong><br>
-          <small class="group-sub ${done?'done-sub':''}" style="color:var(--text-muted)">${group.questions.length} questions</small>
+          <strong class="group-title ${done ? 'done-title' : ''}">${icon} ${escapeHtml(group.name)}</strong><br>
+          <small class="group-sub ${done ? 'done-sub' : ''}" style="color:var(--text-muted)">${group.questions.length} questions</small>
         </label>
         <div class="selection-item-group-actions">
-          <button class="selection-complete-btn ${done?'done':''}" title="تعليم كمكتمل أو إعادة الدراسة" onclick="event.stopPropagation(); confirmCompleteGroup(${idx})">${done ? '🔁' : '✅'}</button>
+          <button class="selection-complete-btn ${done ? 'done' : ''}" title="تعليم كمكتمل أو إعادة الدراسة" onclick="event.stopPropagation(); confirmCompleteGroup(${idx})">${done ? '🔁' : '✅'}</button>
           <span class="selection-drag-handle" title="اسحب لإعادة الترتيب">↕️</span>
         </div>`;
 
       item.addEventListener('click', function(event){
-        if(event.target.closest('input') || event.target.closest('label') || event.target.closest('.selection-complete-btn')) return;
+        if(event.target.closest('input') || event.target.closest('label') || event.target.closest('.selection-complete-btn') || event.target.closest('.selection-drag-handle')) return;
         const cb = item.querySelector('input');
         cb.checked = !cb.checked;
         toggleGroupSelection(idx);
       });
 
+      const handle = item.querySelector('.selection-drag-handle');
+
+      function enableDrag(){
+        state.selectionDragGroupId = group.id;
+        item.draggable = true;
+      }
+
+      function disableDrag(){
+        if(state.selectionDragGroupId === group.id) state.selectionDragGroupId = null;
+        item.draggable = false;
+      }
+
+      if(handle){
+        handle.addEventListener('mousedown', enableDrag);
+        handle.addEventListener('touchstart', enableDrag, { passive:true });
+        handle.addEventListener('mouseup', disableDrag);
+        handle.addEventListener('mouseleave', disableDrag);
+        handle.addEventListener('touchend', disableDrag, { passive:true });
+        handle.addEventListener('touchcancel', disableDrag, { passive:true });
+      }
+
       item.addEventListener('dragstart', e => {
+        if(state.selectionDragGroupId !== group.id){
+          e.preventDefault();
+          return;
+        }
         item.classList.add('dragging');
+        e.dataTransfer.effectAllowed = 'move';
         e.dataTransfer.setData('text/plain', group.id);
       });
+
       item.addEventListener('dragend', () => {
         item.classList.remove('dragging');
-        document.querySelectorAll('#selection-list .selection-group-item').forEach(x=>x.classList.remove('drag-over'));
+        document.querySelectorAll('#selection-list .selection-group-item').forEach(x => x.classList.remove('drag-over'));
+        disableDrag();
       });
+
       item.addEventListener('dragover', e => {
         e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
         item.classList.add('drag-over');
       });
-      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+
+      item.addEventListener('dragleave', () => {
+        item.classList.remove('drag-over');
+      });
+
       item.addEventListener('drop', e => {
         e.preventDefault();
         item.classList.remove('drag-over');
+
         const draggedId = e.dataTransfer.getData('text/plain');
+        if(!draggedId || draggedId === group.id) return;
+
         const rect = item.getBoundingClientRect();
         const afterTarget = e.clientY > (rect.top + rect.height / 2);
+
         reorderGroupIds(subjectName, sectionType, draggedId, group.id, afterTarget);
+        state.currentGroups = ensureGroupOrder(state.currentGroups || [], sectionType, subjectName);
         renderSelectionScreenWithEnhancements();
       });
 
       list.appendChild(item);
     });
   }
-
   function renderSelectionScreenWithEnhancements(){
     const toolbar = ensureSelectionBulkToolbar();
     if(toolbar) toolbar.classList.toggle('hidden', !shouldEnhanceSelectionScreen());
@@ -483,51 +535,70 @@
   window.renderSelectionScreenWithEnhancements = renderSelectionScreenWithEnhancements;
 
   window.openSelectionBulkDialog = function(){
-  if(!shouldEnhanceSelectionScreen() || !Array.isArray(state.currentGroups) || !state.currentGroups.length) return;
-  removeDialogExtras();
-  showDialog({
-    title:'إدارة هذا القسم',
-    message:'<div>يمكنك تعليم كل العناصر في هذا القسم كمكتملة أو إعادة تعيينها.</div>',
-    showCancel:true,
-    confirmText:'تحديد الكل كمنجز',
-    cancelText:'إلغاء',
-    onConfirm:()=>{
-      askConfirm('هذا الإجراء لا يمكن التراجع عنه. هل تريد تحديد كل العناصر كمنجزة؟', ()=>{
-        markGroupsCompletedBulk(state.currentGroups.slice());
-        showToast('تم تعليم كل عناصر هذا القسم كمكتملة.', 'success');
-      });
-    },
-    onCancel:()=>{}
-  });
+    if(!shouldEnhanceSelectionScreen() || !Array.isArray(state.currentGroups) || !state.currentGroups.length) return;
 
-  setTimeout(()=>{
-    const actions = document.querySelector('#dialog-overlay .dialog-actions');
-    if(!actions) return;
-    actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
-    
-    const confirmBtn = document.getElementById('dialog-confirm');
-    const cancelBtn = document.getElementById('dialog-cancel');
-    
-    if(confirmBtn) actions.removeChild(confirmBtn);
-    if(cancelBtn) actions.removeChild(cancelBtn);
-    
-    const resetBtn = document.createElement('button');
-    resetBtn.className = 'btn-secondary dialog-extra-btn';
-    resetBtn.textContent = 'إعادة تعيين';
-    resetBtn.onclick = function(){
-      askConfirm('هذا الإجراء لا يمكن التراجع عنه. هل تريد إعادة تعيين كل العناصر؟', ()=>{
+    removeDialogExtras();
+
+    showDialog({
+      title:'إدارة هذا القسم',
+      message:'<div>يمكنك تعليم كل العناصر في هذا القسم كمكتملة أو إعادة تعيينها.</div>',
+      showCancel:true,
+      confirmText:'تحديد الكل كمنجز',
+      cancelText:'إلغاء',
+      onConfirm:()=>{
         hideDialog();
-        resetGroupsCompletionBulk(state.currentGroups.slice());
-        showToast('تمت إعادة تعيين هذا القسم وتصفير إحصائياته.', 'success');
-      });
-    };
-    
-    actions.appendChild(cancelBtn);
-    actions.appendChild(resetBtn);
-    actions.appendChild(confirmBtn);
-  }, 0);
-};
+        showDialog({
+          title:'تأكيد',
+          message:'هذا الإجراء لا يمكن التراجع عنه. هل تريد تحديد كل العناصر كمنجزة؟',
+          showCancel:true,
+          confirmText:'تأكيد',
+          cancelText:'إلغاء',
+          onConfirm:()=>{
+            markGroupsCompletedBulk(state.currentGroups.slice());
+            showToast('تم تعليم كل عناصر هذا القسم كمكتملة.', 'success');
+          },
+          onCancel:()=>{}
+        });
+      },
+      onCancel:()=>{}
+    });
 
+    setTimeout(() => {
+      const actions = document.querySelector('#dialog-overlay .dialog-actions');
+      if(!actions) return;
+
+      actions.querySelectorAll('.dialog-extra-btn').forEach(btn => btn.remove());
+
+      const confirmBtn = document.getElementById('dialog-confirm');
+      const cancelBtn = document.getElementById('dialog-cancel');
+
+      if(confirmBtn && confirmBtn.parentNode === actions) actions.removeChild(confirmBtn);
+      if(cancelBtn && cancelBtn.parentNode === actions) actions.removeChild(cancelBtn);
+
+      const resetBtn = document.createElement('button');
+      resetBtn.className = 'btn-secondary dialog-extra-btn';
+      resetBtn.textContent = 'إعادة تعيين';
+      resetBtn.onclick = function(){
+        hideDialog();
+        showDialog({
+          title:'تأكيد',
+          message:'هذا الإجراء لا يمكن التراجع عنه. هل تريد إعادة تعيين كل العناصر؟',
+          showCancel:true,
+          confirmText:'تأكيد',
+          cancelText:'إلغاء',
+          onConfirm:()=>{
+            resetGroupsCompletionBulk(state.currentGroups.slice());
+            showToast('تمت إعادة تعيين هذا القسم وتصفير إحصائياته.', 'success');
+          },
+          onCancel:()=>{}
+        });
+      };
+
+      if(cancelBtn) actions.appendChild(cancelBtn);
+      actions.appendChild(resetBtn);
+      if(confirmBtn) actions.appendChild(confirmBtn);
+    }, 0);
+  };
   window.restoreCurrentSelectionOriginalOrder = function(){
     if(!state.currentGroups || !state.currentGroups.length) return;
     const subjectName = state.currentSubject?.name || state.currentGroups[0]?.subjectName || 'unknown';
@@ -652,7 +723,7 @@
     return total;
   };
 
-  getSubjectAnsweredCount = function(subject, options = {}){
+    getSubjectAnsweredCount = function(subject, options = {}){
     const { scope = 'overview', respectVisibilitySettings = false } = options;
 
     if(!(scope === 'subject' && respectVisibilitySettings)){
@@ -663,10 +734,10 @@
     const answeredSet = new Set();
 
     function addKey(key){
-      const entry = state.progress[key];
-      if(entry && Array.isArray(entry.questionIds)){
-        entry.questionIds.forEach(id => answeredSet.add(id));
-      }
+      const ids = typeof getNormalizedProgressIdsForKey === 'function'
+        ? getNormalizedProgressIdsForKey(key)
+        : ((state.progress[key] && Array.isArray(state.progress[key].questionIds)) ? Array.from(new Set(state.progress[key].questionIds)) : []);
+      ids.forEach(id => answeredSet.add(id));
     }
 
     if(settings.lectures !== false){
@@ -681,7 +752,8 @@
       (subject.years || []).forEach(g => addKey(`year:${subject.name}/${g.name}`));
     }
 
-    return answeredSet.size;
+    const total = getSubjectTotalQuestions(subject, options);
+    return Math.min(answeredSet.size, total);
   };
     const __origRenderSubjectStatsPatch = typeof renderSubjectStats === 'function' ? renderSubjectStats : null;
 

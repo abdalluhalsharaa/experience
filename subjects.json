@@ -1,0 +1,1846 @@
+[
+  {
+    "id": "internal",
+    "name": "Internal",
+    "lectures": [
+      {
+        "id": "internal__lecture__rs",
+        "name": "RS",
+        "type": "lecture",
+        "subjectName": "Internal",
+        "path": "Internal/RS.txt",
+        "questions": [
+          {
+            "id": "internal__lecture__rs__1__g1mms7",
+            "number": "1",
+            "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
+            "options": [
+              "200 ml and 12% increase in FEV1 after bronchodilator use",
+              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+              "An 8% increase in FEV1 after bronchodilator use",
+              "Nocturnal awakening due to cough or wheeze",
+              "Greater than 20% diurnal variation in peak expiratory flow"
+            ],
+            "originalOptions": [
+              "200 ml and 12% increase in FEV1 after bronchodilator use",
+              "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+              "An 8% increase in FEV1 after bronchodilator use",
+              "Nocturnal awakening due to cough or wheeze",
+              "Greater than 20% diurnal variation in peak expiratory flow"
+            ],
+            "correctAnswer": "C) An 8% increase in FEV1 after bronchodilator use",
+            "correctAnswerText": "An 8% increase in FEV1 after bronchodilator use",
+            "correctIndex": 0,
+            "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Internal",
+            "subjectId": "internal",
+            "lectureName": "RS",
+            "groupName": "RS",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "internal__lecture__rs__2__3fhsv5",
+            "number": "2",
+            "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
+            "options": [
+              "Respiratory Rate ≥ 18 breaths/min",
+              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+              "Age ≥ 65 years",
+              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+              "Confusion (new onset)"
+            ],
+            "originalOptions": [
+              "Respiratory Rate ≥ 18 breaths/min",
+              "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+              "Age ≥ 65 years",
+              "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+              "Confusion (new onset)"
+            ],
+            "correctAnswer": "A) Respiratory Rate ≥ 18 breaths/min",
+            "correctAnswerText": "Respiratory Rate ≥ 18 breaths/min",
+            "correctIndex": 0,
+            "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Internal",
+            "subjectId": "internal",
+            "lectureName": "RS",
+            "groupName": "RS",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "internal__lecture__rs__1__g1mms7",
+        "number": "1",
+        "text": "A patient is evaluated for suspected asthma. Which of the following spirometry findings or clinical features is LEAST suggestive of a diagnosis of asthma?",
+        "options": [
+          "200 ml and 12% increase in FEV1 after bronchodilator use",
+          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+          "An 8% increase in FEV1 after bronchodilator use",
+          "Nocturnal awakening due to cough or wheeze",
+          "Greater than 20% diurnal variation in peak expiratory flow"
+        ],
+        "originalOptions": [
+          "200 ml and 12% increase in FEV1 after bronchodilator use",
+          "Symptoms of chest tightness and wheezing worsening with exercise or cold",
+          "An 8% increase in FEV1 after bronchodilator use",
+          "Nocturnal awakening due to cough or wheeze",
+          "Greater than 20% diurnal variation in peak expiratory flow"
+        ],
+        "correctAnswer": "C) An 8% increase in FEV1 after bronchodilator use",
+        "correctAnswerText": "An 8% increase in FEV1 after bronchodilator use",
+        "correctIndex": 0,
+        "explanation": "Significant reversibility is defined as an increase in FEV1 of >12% AND >200ml. An increase of only 8% is not considered significant for the diagnosis of asthma.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Internal",
+        "subjectId": "internal",
+        "lectureName": "RS",
+        "groupName": "RS",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "internal__lecture__rs__2__3fhsv5",
+        "number": "2",
+        "text": "The CURB-65 score is used to assess the severity of Community-Acquired Pneumonia. Which of the following is NOT a component of this scoring system?",
+        "options": [
+          "Respiratory Rate ≥ 18 breaths/min",
+          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+          "Age ≥ 65 years",
+          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+          "Confusion (new onset)"
+        ],
+        "originalOptions": [
+          "Respiratory Rate ≥ 18 breaths/min",
+          "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+          "Age ≥ 65 years",
+          "Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg",
+          "Confusion (new onset)"
+        ],
+        "correctAnswer": "A) Respiratory Rate ≥ 18 breaths/min",
+        "correctAnswerText": "Respiratory Rate ≥ 18 breaths/min",
+        "correctIndex": 0,
+        "explanation": "The respiratory criteria for CURB-65 is a Respiratory Rate ≥ 30 breaths/min.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Internal",
+        "subjectId": "internal",
+        "lectureName": "RS",
+        "groupName": "RS",
+        "sourceType": "lecture"
+      }
+    ],
+    "totalQuestions": 2,
+    "totalLectures": 1,
+    "hasAiFolder": false
+  },
+  {
+    "id": "neuromedicine",
+    "name": "Neuromedicine",
+    "lectures": [
+      {
+        "id": "neuromedicine__lecture__headache",
+        "name": "Headache",
+        "type": "lecture",
+        "subjectName": "Neuromedicine",
+        "path": "Neuromedicine/Headache.txt",
+        "questions": [
+          {
+            "id": "neuromedicine__lecture__headache__1__5nvp87",
+            "number": "1",
+            "text": "Headache What is the most likely diagnosis?",
+            "options": [
+              "Migraine",
+              "Tension headache",
+              "Cluster headache",
+              "Temporal arteritis (Giant cell arteritis)"
+            ],
+            "originalOptions": [
+              "Migraine",
+              "Tension headache",
+              "Cluster headache",
+              "Temporal arteritis (Giant cell arteritis)"
+            ],
+            "correctAnswer": "D) Temporal arteritis (Giant cell arteritis)",
+            "correctAnswerText": "Temporal arteritis (Giant cell arteritis)",
+            "correctIndex": 3,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neuromedicine",
+            "subjectId": "neuromedicine",
+            "lectureName": "Headache",
+            "groupName": "Headache",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neuromedicine__lecture__headache__2__qro60g",
+            "number": "2",
+            "text": "What is the treatment for temporal arteritis?",
+            "options": [
+              "NSAIDs",
+              "Oral corticosteroids (prednisolone)",
+              "Sumatriptan",
+              "Verapamil"
+            ],
+            "originalOptions": [
+              "NSAIDs",
+              "Oral corticosteroids (prednisolone)",
+              "Sumatriptan",
+              "Verapamil"
+            ],
+            "correctAnswer": "B) Oral corticosteroids (prednisolone)",
+            "correctAnswerText": "Oral corticosteroids (prednisolone)",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neuromedicine",
+            "subjectId": "neuromedicine",
+            "lectureName": "Headache",
+            "groupName": "Headache",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neuromedicine__lecture__headache__3__ayu441",
+            "number": "3",
+            "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
+            "options": [
+              "Amitriptyline",
+              "Greater occipital nerve block",
+              "Verapamil",
+              "Valproic acid"
+            ],
+            "originalOptions": [
+              "Amitriptyline",
+              "Greater occipital nerve block",
+              "Verapamil",
+              "Valproic acid"
+            ],
+            "correctAnswer": "C) Verapamil",
+            "correctAnswerText": "Verapamil",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neuromedicine",
+            "subjectId": "neuromedicine",
+            "lectureName": "Headache",
+            "groupName": "Headache",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "neuromedicine__lecture__headache__1__5nvp87",
+        "number": "1",
+        "text": "Headache What is the most likely diagnosis?",
+        "options": [
+          "Migraine",
+          "Tension headache",
+          "Cluster headache",
+          "Temporal arteritis (Giant cell arteritis)"
+        ],
+        "originalOptions": [
+          "Migraine",
+          "Tension headache",
+          "Cluster headache",
+          "Temporal arteritis (Giant cell arteritis)"
+        ],
+        "correctAnswer": "D) Temporal arteritis (Giant cell arteritis)",
+        "correctAnswerText": "Temporal arteritis (Giant cell arteritis)",
+        "correctIndex": 3,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neuromedicine",
+        "subjectId": "neuromedicine",
+        "lectureName": "Headache",
+        "groupName": "Headache",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neuromedicine__lecture__headache__2__qro60g",
+        "number": "2",
+        "text": "What is the treatment for temporal arteritis?",
+        "options": [
+          "NSAIDs",
+          "Oral corticosteroids (prednisolone)",
+          "Sumatriptan",
+          "Verapamil"
+        ],
+        "originalOptions": [
+          "NSAIDs",
+          "Oral corticosteroids (prednisolone)",
+          "Sumatriptan",
+          "Verapamil"
+        ],
+        "correctAnswer": "B) Oral corticosteroids (prednisolone)",
+        "correctAnswerText": "Oral corticosteroids (prednisolone)",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neuromedicine",
+        "subjectId": "neuromedicine",
+        "lectureName": "Headache",
+        "groupName": "Headache",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neuromedicine__lecture__headache__3__ayu441",
+        "number": "3",
+        "text": "Which of the following is the drug of choice for prophylaxis of episodic and chronic cluster headache?",
+        "options": [
+          "Amitriptyline",
+          "Greater occipital nerve block",
+          "Verapamil",
+          "Valproic acid"
+        ],
+        "originalOptions": [
+          "Amitriptyline",
+          "Greater occipital nerve block",
+          "Verapamil",
+          "Valproic acid"
+        ],
+        "correctAnswer": "C) Verapamil",
+        "correctAnswerText": "Verapamil",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neuromedicine",
+        "subjectId": "neuromedicine",
+        "lectureName": "Headache",
+        "groupName": "Headache",
+        "sourceType": "lecture"
+      }
+    ],
+    "totalQuestions": 3,
+    "totalLectures": 1,
+    "hasAiFolder": false
+  },
+  {
+    "id": "neurosurgery",
+    "name": "Neurosurgery",
+    "lectures": [
+      {
+        "id": "neurosurgery__lecture__back-pain",
+        "name": "Back Pain",
+        "type": "lecture",
+        "subjectName": "Neurosurgery",
+        "path": "Neurosurgery/Back Pain.txt",
+        "questions": [
+          {
+            "id": "neurosurgery__lecture__back-pain__1__oglxqw",
+            "number": "1",
+            "text": "Back Pain Which of the following is an accurate description of mechanical back pain?",
+            "options": [
+              "Low back pain that is worse with prolonged standing and relieved by ambulation",
+              "Low back pain that is worse at rest and relieved by activity",
+              "Low back pain associated with fever and night sweats",
+              "Low back pain with saddle anaesthesia"
+            ],
+            "originalOptions": [
+              "Low back pain that is worse with prolonged standing and relieved by ambulation",
+              "Low back pain that is worse at rest and relieved by activity",
+              "Low back pain associated with fever and night sweats",
+              "Low back pain with saddle anaesthesia"
+            ],
+            "correctAnswer": "A) Low back pain that is worse with prolonged standing and relieved by ambulation",
+            "correctAnswerText": "Low back pain that is worse with prolonged standing and relieved by ambulation",
+            "correctIndex": 0,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__back-pain__2__b5s0az",
+            "number": "2",
+            "text": "A 45-year-old worker presents with a 4-week history of lower back pain. The pain is isolated to his lower back and he is not experiencing any signs of radiculopathy. What is the best next step in management?",
+            "options": [
+              "MRI without contrast",
+              "Conservative management (NSAIDs + physiotherapy)",
+              "Lumbar spine X-ray",
+              "Surgical referral"
+            ],
+            "originalOptions": [
+              "MRI without contrast",
+              "Conservative management (NSAIDs + physiotherapy)",
+              "Lumbar spine X-ray",
+              "Surgical referral"
+            ],
+            "correctAnswer": "C) Lumbar spine X-ray",
+            "correctAnswerText": "Lumbar spine X-ray",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__back-pain__3__vh3ohq",
+            "number": "3",
+            "text": "On MRI of the lumbar spine, a disc herniation at L4/L5 is identified compressing a nerve root. What is the most likely level affected?",
+            "options": [
+              "L4 nerve root",
+              "L5 nerve root",
+              "S1 nerve root",
+              "L3 nerve root"
+            ],
+            "originalOptions": [
+              "L4 nerve root",
+              "L5 nerve root",
+              "S1 nerve root",
+              "L3 nerve root"
+            ],
+            "correctAnswer": "B) L5 nerve root",
+            "correctAnswerText": "L5 nerve root",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__back-pain__4__ukmevo",
+            "number": "4",
+            "text": "What are the most common symptoms of cervical myelopathy?",
+            "options": [
+              "Bilateral hand weakness, numbness and pain (radiculopathy)",
+              "Bilateral hand clumsiness and gait instability",
+              "Unilateral leg weakness",
+              "Saddle anaesthesia"
+            ],
+            "originalOptions": [
+              "Bilateral hand weakness, numbness and pain (radiculopathy)",
+              "Bilateral hand clumsiness and gait instability",
+              "Unilateral leg weakness",
+              "Saddle anaesthesia"
+            ],
+            "correctAnswer": "B) Bilateral hand clumsiness and gait instability",
+            "correctAnswerText": "Bilateral hand clumsiness and gait instability",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__back-pain__5__wfiwkv",
+            "number": "5",
+            "text": "A patient presents with loss of sensation below the umbilicus, paraplegia, and stool/urine incontinence. What is the most likely level of injury?",
+            "options": [
+              "T7 fracture",
+              "C7 fracture",
+              "Severe head trauma affecting motor area",
+              "Cauda equina"
+            ],
+            "originalOptions": [
+              "T7 fracture",
+              "C7 fracture",
+              "Severe head trauma affecting motor area",
+              "Cauda equina"
+            ],
+            "correctAnswer": "A) T7 fracture",
+            "correctAnswerText": "T7 fracture",
+            "correctIndex": 0,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__back-pain__6__18u3d0",
+            "number": "6",
+            "text": "Which of the following tests does NOT evaluate spinal nerve root compression?",
+            "options": [
+              "Straight leg raise test",
+              "FABER test",
+              "Kernig test",
+              "Lower extremities reflex testing"
+            ],
+            "originalOptions": [
+              "Straight leg raise test",
+              "FABER test",
+              "Kernig test",
+              "Lower extremities reflex testing"
+            ],
+            "correctAnswer": "B) FABER test",
+            "correctAnswerText": "FABER test",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__back-pain__7__l0ug24",
+            "number": "7",
+            "text": "Which nerve root is affected by a C5/C6 disc herniation?",
+            "options": [
+              "C5",
+              "C6",
+              "C7",
+              "C4"
+            ],
+            "originalOptions": [
+              "C5",
+              "C6",
+              "C7",
+              "C4"
+            ],
+            "correctAnswer": "B) C6",
+            "correctAnswerText": "C6",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Back Pain",
+            "groupName": "Back Pain",
+            "sourceType": "lecture"
+          }
+        ]
+      },
+      {
+        "id": "neurosurgery__lecture__kook",
+        "name": "Kook",
+        "type": "lecture",
+        "subjectName": "Neurosurgery",
+        "path": "Neurosurgery/Kook.txt",
+        "questions": [
+          {
+            "id": "neurosurgery__lecture__kook__1__lqdv6s",
+            "number": "1",
+            "text": "Which ?",
+            "options": [
+              "abdullah",
+              "abdullah 2",
+              "abdullah 3",
+              "abdullah 4"
+            ],
+            "originalOptions": [
+              "abdullah",
+              "abdullah 2",
+              "abdullah 3",
+              "abdullah 4"
+            ],
+            "correctAnswer": "B) abdullah 2",
+            "correctAnswerText": "abdullah 2",
+            "correctIndex": 0,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Kook",
+            "groupName": "Kook",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__kook__2__ki6c3v",
+            "number": "2",
+            "text": "How ajah djdj ?",
+            "options": [
+              "u",
+              "L",
+              "M",
+              "R"
+            ],
+            "originalOptions": [
+              "u",
+              "L",
+              "M",
+              "R"
+            ],
+            "correctAnswer": "C) M",
+            "correctAnswerText": "M",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Kook",
+            "groupName": "Kook",
+            "sourceType": "lecture"
+          }
+        ]
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage",
+        "name": "Subarachnoid Haemorrhage",
+        "type": "lecture",
+        "subjectName": "Neurosurgery",
+        "path": "Neurosurgery/Subarachnoid Haemorrhage.txt",
+        "questions": [
+          {
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__ezq87w",
+            "number": "1",
+            "text": "Subarachnoid Haemorrhage What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?",
+            "options": [
+              "Conventional 4-vessel cerebral angiogram",
+              "CTA brain",
+              "Lumbar puncture (LP)",
+              "CT brain without contrast"
+            ],
+            "originalOptions": [
+              "Conventional 4-vessel cerebral angiogram",
+              "CTA brain",
+              "Lumbar puncture (LP)",
+              "CT brain without contrast"
+            ],
+            "correctAnswer": "C) Lumbar puncture (LP)",
+            "correctAnswerText": "Lumbar puncture (LP)",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Subarachnoid Haemorrhage",
+            "groupName": "Subarachnoid Haemorrhage",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__2__xpwzgg",
+            "number": "2",
+            "text": "A 62-year-old female patient was admitted to the ICU with aneurysmal SAH. 6 days later, she developed sudden aphasia and right-sided hemiplegia. What is the most likely cause?",
+            "options": [
+              "Rebleeding from MCA aneurysm",
+              "Vasospasm in MCA",
+              "Vasospasm in ACA",
+              "Rebleeding from anterior communicating artery aneurysm"
+            ],
+            "originalOptions": [
+              "Rebleeding from MCA aneurysm",
+              "Vasospasm in MCA",
+              "Vasospasm in ACA",
+              "Rebleeding from anterior communicating artery aneurysm"
+            ],
+            "correctAnswer": "B) Vasospasm in MCA",
+            "correctAnswerText": "Vasospasm in MCA",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Subarachnoid Haemorrhage",
+            "groupName": "Subarachnoid Haemorrhage",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__3__lo1p2q",
+            "number": "3",
+            "text": "Which of the following is WRONG regarding intracranial aneurysms?",
+            "options": [
+              "Peak age is 55-65 years",
+              "More common in males than in females",
+              "Rupture occurs in 95-97% of symptomatic cases",
+              "Berry aneurysms account for 75-80% of SAH"
+            ],
+            "originalOptions": [
+              "Peak age is 55-65 years",
+              "More common in males than in females",
+              "Rupture occurs in 95-97% of symptomatic cases",
+              "Berry aneurysms account for 75-80% of SAH"
+            ],
+            "correctAnswer": "B) More common in males than in females",
+            "correctAnswerText": "More common in males than in females",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Subarachnoid Haemorrhage",
+            "groupName": "Subarachnoid Haemorrhage",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__4__f9735r",
+            "number": "4",
+            "text": "A patient with SAH has GCS of 13-14 with no major deficit. What is the WFNS grade?",
+            "options": [
+              "WFNS Grade 1",
+              "WFNS Grade 2",
+              "WFNS Grade 3",
+              "WFNS Grade 4"
+            ],
+            "originalOptions": [
+              "WFNS Grade 1",
+              "WFNS Grade 2",
+              "WFNS Grade 3",
+              "WFNS Grade 4"
+            ],
+            "correctAnswer": "B) WFNS Grade 2",
+            "correctAnswerText": "WFNS Grade 2",
+            "correctIndex": 1,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Subarachnoid Haemorrhage",
+            "groupName": "Subarachnoid Haemorrhage",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__5__cl26kn",
+            "number": "5",
+            "text": "All of the following are in favor of surgical clipping over coiling in the management of intracranial aneurysms EXCEPT:",
+            "options": [
+              "Young patient with long life expectancy",
+              "Aneurysm with wide neck",
+              "Hunt and Hess grade 4 on admission",
+              "Accessible aneurysm location"
+            ],
+            "originalOptions": [
+              "Young patient with long life expectancy",
+              "Aneurysm with wide neck",
+              "Hunt and Hess grade 4 on admission",
+              "Accessible aneurysm location"
+            ],
+            "correctAnswer": "C) Hunt and Hess grade 4 on admission",
+            "correctAnswerText": "Hunt and Hess grade 4 on admission",
+            "correctIndex": 2,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Subarachnoid Haemorrhage",
+            "groupName": "Subarachnoid Haemorrhage",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "neurosurgery__lecture__subarachnoid-haemorrhage__6__c4eziy",
+            "number": "6",
+            "text": "What is the treatment for vasospasm after SAH?",
+            "options": [
+              "Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+              "Mannitol",
+              "Dexamethasone",
+              "Aspirin"
+            ],
+            "originalOptions": [
+              "Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+              "Mannitol",
+              "Dexamethasone",
+              "Aspirin"
+            ],
+            "correctAnswer": "A) Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+            "correctAnswerText": "Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+            "correctIndex": 0,
+            "explanation": "",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Neurosurgery",
+            "subjectId": "neurosurgery",
+            "lectureName": "Subarachnoid Haemorrhage",
+            "groupName": "Subarachnoid Haemorrhage",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "neurosurgery__lecture__back-pain__1__oglxqw",
+        "number": "1",
+        "text": "Back Pain Which of the following is an accurate description of mechanical back pain?",
+        "options": [
+          "Low back pain that is worse with prolonged standing and relieved by ambulation",
+          "Low back pain that is worse at rest and relieved by activity",
+          "Low back pain associated with fever and night sweats",
+          "Low back pain with saddle anaesthesia"
+        ],
+        "originalOptions": [
+          "Low back pain that is worse with prolonged standing and relieved by ambulation",
+          "Low back pain that is worse at rest and relieved by activity",
+          "Low back pain associated with fever and night sweats",
+          "Low back pain with saddle anaesthesia"
+        ],
+        "correctAnswer": "A) Low back pain that is worse with prolonged standing and relieved by ambulation",
+        "correctAnswerText": "Low back pain that is worse with prolonged standing and relieved by ambulation",
+        "correctIndex": 0,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__back-pain__2__b5s0az",
+        "number": "2",
+        "text": "A 45-year-old worker presents with a 4-week history of lower back pain. The pain is isolated to his lower back and he is not experiencing any signs of radiculopathy. What is the best next step in management?",
+        "options": [
+          "MRI without contrast",
+          "Conservative management (NSAIDs + physiotherapy)",
+          "Lumbar spine X-ray",
+          "Surgical referral"
+        ],
+        "originalOptions": [
+          "MRI without contrast",
+          "Conservative management (NSAIDs + physiotherapy)",
+          "Lumbar spine X-ray",
+          "Surgical referral"
+        ],
+        "correctAnswer": "C) Lumbar spine X-ray",
+        "correctAnswerText": "Lumbar spine X-ray",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__back-pain__3__vh3ohq",
+        "number": "3",
+        "text": "On MRI of the lumbar spine, a disc herniation at L4/L5 is identified compressing a nerve root. What is the most likely level affected?",
+        "options": [
+          "L4 nerve root",
+          "L5 nerve root",
+          "S1 nerve root",
+          "L3 nerve root"
+        ],
+        "originalOptions": [
+          "L4 nerve root",
+          "L5 nerve root",
+          "S1 nerve root",
+          "L3 nerve root"
+        ],
+        "correctAnswer": "B) L5 nerve root",
+        "correctAnswerText": "L5 nerve root",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__back-pain__4__ukmevo",
+        "number": "4",
+        "text": "What are the most common symptoms of cervical myelopathy?",
+        "options": [
+          "Bilateral hand weakness, numbness and pain (radiculopathy)",
+          "Bilateral hand clumsiness and gait instability",
+          "Unilateral leg weakness",
+          "Saddle anaesthesia"
+        ],
+        "originalOptions": [
+          "Bilateral hand weakness, numbness and pain (radiculopathy)",
+          "Bilateral hand clumsiness and gait instability",
+          "Unilateral leg weakness",
+          "Saddle anaesthesia"
+        ],
+        "correctAnswer": "B) Bilateral hand clumsiness and gait instability",
+        "correctAnswerText": "Bilateral hand clumsiness and gait instability",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__back-pain__5__wfiwkv",
+        "number": "5",
+        "text": "A patient presents with loss of sensation below the umbilicus, paraplegia, and stool/urine incontinence. What is the most likely level of injury?",
+        "options": [
+          "T7 fracture",
+          "C7 fracture",
+          "Severe head trauma affecting motor area",
+          "Cauda equina"
+        ],
+        "originalOptions": [
+          "T7 fracture",
+          "C7 fracture",
+          "Severe head trauma affecting motor area",
+          "Cauda equina"
+        ],
+        "correctAnswer": "A) T7 fracture",
+        "correctAnswerText": "T7 fracture",
+        "correctIndex": 0,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__back-pain__6__18u3d0",
+        "number": "6",
+        "text": "Which of the following tests does NOT evaluate spinal nerve root compression?",
+        "options": [
+          "Straight leg raise test",
+          "FABER test",
+          "Kernig test",
+          "Lower extremities reflex testing"
+        ],
+        "originalOptions": [
+          "Straight leg raise test",
+          "FABER test",
+          "Kernig test",
+          "Lower extremities reflex testing"
+        ],
+        "correctAnswer": "B) FABER test",
+        "correctAnswerText": "FABER test",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__back-pain__7__l0ug24",
+        "number": "7",
+        "text": "Which nerve root is affected by a C5/C6 disc herniation?",
+        "options": [
+          "C5",
+          "C6",
+          "C7",
+          "C4"
+        ],
+        "originalOptions": [
+          "C5",
+          "C6",
+          "C7",
+          "C4"
+        ],
+        "correctAnswer": "B) C6",
+        "correctAnswerText": "C6",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Back Pain",
+        "groupName": "Back Pain",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__kook__1__lqdv6s",
+        "number": "1",
+        "text": "Which ?",
+        "options": [
+          "abdullah",
+          "abdullah 2",
+          "abdullah 3",
+          "abdullah 4"
+        ],
+        "originalOptions": [
+          "abdullah",
+          "abdullah 2",
+          "abdullah 3",
+          "abdullah 4"
+        ],
+        "correctAnswer": "B) abdullah 2",
+        "correctAnswerText": "abdullah 2",
+        "correctIndex": 0,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Kook",
+        "groupName": "Kook",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__kook__2__ki6c3v",
+        "number": "2",
+        "text": "How ajah djdj ?",
+        "options": [
+          "u",
+          "L",
+          "M",
+          "R"
+        ],
+        "originalOptions": [
+          "u",
+          "L",
+          "M",
+          "R"
+        ],
+        "correctAnswer": "C) M",
+        "correctAnswerText": "M",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Kook",
+        "groupName": "Kook",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__1__ezq87w",
+        "number": "1",
+        "text": "Subarachnoid Haemorrhage What is the most sensitive test for detection of acute subarachnoid hemorrhage (SAH)?",
+        "options": [
+          "Conventional 4-vessel cerebral angiogram",
+          "CTA brain",
+          "Lumbar puncture (LP)",
+          "CT brain without contrast"
+        ],
+        "originalOptions": [
+          "Conventional 4-vessel cerebral angiogram",
+          "CTA brain",
+          "Lumbar puncture (LP)",
+          "CT brain without contrast"
+        ],
+        "correctAnswer": "C) Lumbar puncture (LP)",
+        "correctAnswerText": "Lumbar puncture (LP)",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Subarachnoid Haemorrhage",
+        "groupName": "Subarachnoid Haemorrhage",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__2__xpwzgg",
+        "number": "2",
+        "text": "A 62-year-old female patient was admitted to the ICU with aneurysmal SAH. 6 days later, she developed sudden aphasia and right-sided hemiplegia. What is the most likely cause?",
+        "options": [
+          "Rebleeding from MCA aneurysm",
+          "Vasospasm in MCA",
+          "Vasospasm in ACA",
+          "Rebleeding from anterior communicating artery aneurysm"
+        ],
+        "originalOptions": [
+          "Rebleeding from MCA aneurysm",
+          "Vasospasm in MCA",
+          "Vasospasm in ACA",
+          "Rebleeding from anterior communicating artery aneurysm"
+        ],
+        "correctAnswer": "B) Vasospasm in MCA",
+        "correctAnswerText": "Vasospasm in MCA",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Subarachnoid Haemorrhage",
+        "groupName": "Subarachnoid Haemorrhage",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__3__lo1p2q",
+        "number": "3",
+        "text": "Which of the following is WRONG regarding intracranial aneurysms?",
+        "options": [
+          "Peak age is 55-65 years",
+          "More common in males than in females",
+          "Rupture occurs in 95-97% of symptomatic cases",
+          "Berry aneurysms account for 75-80% of SAH"
+        ],
+        "originalOptions": [
+          "Peak age is 55-65 years",
+          "More common in males than in females",
+          "Rupture occurs in 95-97% of symptomatic cases",
+          "Berry aneurysms account for 75-80% of SAH"
+        ],
+        "correctAnswer": "B) More common in males than in females",
+        "correctAnswerText": "More common in males than in females",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Subarachnoid Haemorrhage",
+        "groupName": "Subarachnoid Haemorrhage",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__4__f9735r",
+        "number": "4",
+        "text": "A patient with SAH has GCS of 13-14 with no major deficit. What is the WFNS grade?",
+        "options": [
+          "WFNS Grade 1",
+          "WFNS Grade 2",
+          "WFNS Grade 3",
+          "WFNS Grade 4"
+        ],
+        "originalOptions": [
+          "WFNS Grade 1",
+          "WFNS Grade 2",
+          "WFNS Grade 3",
+          "WFNS Grade 4"
+        ],
+        "correctAnswer": "B) WFNS Grade 2",
+        "correctAnswerText": "WFNS Grade 2",
+        "correctIndex": 1,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Subarachnoid Haemorrhage",
+        "groupName": "Subarachnoid Haemorrhage",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__5__cl26kn",
+        "number": "5",
+        "text": "All of the following are in favor of surgical clipping over coiling in the management of intracranial aneurysms EXCEPT:",
+        "options": [
+          "Young patient with long life expectancy",
+          "Aneurysm with wide neck",
+          "Hunt and Hess grade 4 on admission",
+          "Accessible aneurysm location"
+        ],
+        "originalOptions": [
+          "Young patient with long life expectancy",
+          "Aneurysm with wide neck",
+          "Hunt and Hess grade 4 on admission",
+          "Accessible aneurysm location"
+        ],
+        "correctAnswer": "C) Hunt and Hess grade 4 on admission",
+        "correctAnswerText": "Hunt and Hess grade 4 on admission",
+        "correctIndex": 2,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Subarachnoid Haemorrhage",
+        "groupName": "Subarachnoid Haemorrhage",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "neurosurgery__lecture__subarachnoid-haemorrhage__6__c4eziy",
+        "number": "6",
+        "text": "What is the treatment for vasospasm after SAH?",
+        "options": [
+          "Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+          "Mannitol",
+          "Dexamethasone",
+          "Aspirin"
+        ],
+        "originalOptions": [
+          "Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+          "Mannitol",
+          "Dexamethasone",
+          "Aspirin"
+        ],
+        "correctAnswer": "A) Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+        "correctAnswerText": "Triple H therapy (Hemodilution, Hypervolemia, Hypertension)",
+        "correctIndex": 0,
+        "explanation": "",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Neurosurgery",
+        "subjectId": "neurosurgery",
+        "lectureName": "Subarachnoid Haemorrhage",
+        "groupName": "Subarachnoid Haemorrhage",
+        "sourceType": "lecture"
+      }
+    ],
+    "totalQuestions": 15,
+    "totalLectures": 3,
+    "hasAiFolder": false
+  },
+  {
+    "id": "surgery",
+    "name": "Surgery",
+    "lectures": [
+      {
+        "id": "surgery__lecture__fluids",
+        "name": "Fluids",
+        "type": "lecture",
+        "subjectName": "Surgery",
+        "path": "Surgery/Fluids.txt",
+        "questions": [
+          {
+            "id": "surgery__lecture__fluids__1__cvoiz0",
+            "number": "1",
+            "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
+            "options": [
+              "800 mL/hr",
+              "1000 mL/hr",
+              "1250 mL/hr",
+              "1500 mL/hr",
+              "1800 mL/hr"
+            ],
+            "originalOptions": [
+              "800 mL/hr",
+              "1000 mL/hr",
+              "1250 mL/hr",
+              "1500 mL/hr",
+              "1800 mL/hr"
+            ],
+            "correctAnswer": "C) 1250 mL/hr",
+            "correctAnswerText": "1250 mL/hr",
+            "correctIndex": 2,
+            "explanation": "1. Total fluid 24h = 4 mL x 95 kg x 42 = 15,960 mL. 2. First 8h requirement (50%) = 7,980 mL. 3. Fluid already given = 3,000 mL. 4. Remaining fluid for first 8h = 4,980 mL. 5. Time remaining in first 8h window = 4 hours. 6. Rate = 4,980 mL / 4 hr = 1,245 mL/hr (closest to 1250).",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Fluids",
+            "groupName": "Fluids",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "surgery__lecture__fluids__2__eykfbt",
+            "number": "2",
+            "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
+            "options": [
+              "Acute renal failure",
+              "Cardiac arrhythmia",
+              "Compartment syndrome requiring fasciotomy",
+              "Curling's ulcer",
+              "Pulmonary embolism"
+            ],
+            "originalOptions": [
+              "Acute renal failure",
+              "Cardiac arrhythmia",
+              "Compartment syndrome requiring fasciotomy",
+              "Curling's ulcer",
+              "Pulmonary embolism"
+            ],
+            "correctAnswer": "A) Acute renal failure",
+            "correctAnswerText": "Acute renal failure",
+            "correctIndex": 0,
+            "explanation": "Dark urine after a high-voltage electrical burn suggests myoglobinuria due to rhabdomyolysis. This places the patient at high risk of acute kidney injury and requires prompt fluid resuscitation and monitoring.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Fluids",
+            "groupName": "Fluids",
+            "sourceType": "lecture"
+          },
+          {
+            "id": "surgery__lecture__fluids__3__bclkl0",
+            "number": "3",
+            "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
+            "options": [
+              "Metabolic alkalosis",
+              "Respiratory acidosis",
+              "Hyperchloremic metabolic acidosis",
+              "Hypochloremic metabolic acidosis",
+              "Respiratory alkalosis"
+            ],
+            "originalOptions": [
+              "Metabolic alkalosis",
+              "Respiratory acidosis",
+              "Hyperchloremic metabolic acidosis",
+              "Hypochloremic metabolic acidosis",
+              "Respiratory alkalosis"
+            ],
+            "correctAnswer": "C) Hyperchloremic metabolic acidosis",
+            "correctAnswerText": "Hyperchloremic metabolic acidosis",
+            "correctIndex": 2,
+            "explanation": "Normal saline contains high levels of chloride (154 mEq/L) compared to plasma. Excessive administration leads to hyperchloremia and a normal anion gap metabolic acidosis.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Fluids",
+            "groupName": "Fluids",
+            "sourceType": "lecture"
+          }
+        ]
+      }
+    ],
+    "ai": [
+      {
+        "id": "surgery__ai__pancreatitis",
+        "name": "Pancreatitis",
+        "type": "ai",
+        "subjectName": "Surgery",
+        "path": "Surgery/AI/Pancreatitis.txt",
+        "questions": [
+          {
+            "id": "surgery__ai__pancreatitis__1__r3kge",
+            "number": "1",
+            "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
+            "options": [
+              "Serum amylase",
+              "Serum lipase",
+              "Alkaline phosphatase",
+              "Alanine aminotransferase (ALT)",
+              "C-reactive protein (CRP)"
+            ],
+            "originalOptions": [
+              "Serum amylase",
+              "Serum lipase",
+              "Alkaline phosphatase",
+              "Alanine aminotransferase (ALT)",
+              "C-reactive protein (CRP)"
+            ],
+            "correctAnswer": "B) Serum lipase",
+            "correctAnswerText": "Serum lipase",
+            "correctIndex": 1,
+            "explanation": "Serum lipase is preferred over serum amylase because it remains elevated longer and has higher sensitivity and specificity for pancreatic tissue injury. Amylase can rise in non-pancreatic conditions and drops quickly.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__2__8xuesk",
+            "number": "2",
+            "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
+            "options": [
+              "CHADS2 score",
+              "Ranson criteria",
+              "Child-Pugh score",
+              "CURB-65",
+              "Glasgow Coma Scale"
+            ],
+            "originalOptions": [
+              "CHADS2 score",
+              "Ranson criteria",
+              "Child-Pugh score",
+              "CURB-65",
+              "Glasgow Coma Scale"
+            ],
+            "correctAnswer": "B) Ranson criteria",
+            "correctAnswerText": "Ranson criteria",
+            "correctIndex": 1,
+            "explanation": "Ranson criteria evaluate 5 parameters at admission and 6 parameters during the initial 48 hours to predict the severity and mortality risk of acute pancreatitis. The other scales are for stroke, liver failure, pneumonia, or consciousness.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__3__45gu1i",
+            "number": "3",
+            "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
+            "options": [
+              "Conservative management with intravenous fluids only",
+              "Immediate prophylactic administration of antihistamines",
+              "Initiating empiric antibiotic therapy and planning for drainage",
+              "High-dose corticosteroid therapy",
+              "Immediate total pancreatectomy"
+            ],
+            "originalOptions": [
+              "Conservative management with intravenous fluids only",
+              "Immediate prophylactic administration of antihistamines",
+              "Initiating empiric antibiotic therapy and planning for drainage",
+              "High-dose corticosteroid therapy",
+              "Immediate total pancreatectomy"
+            ],
+            "correctAnswer": "C) Initiating empiric antibiotic therapy and planning for drainage",
+            "correctAnswerText": "Initiating empiric antibiotic therapy and planning for drainage",
+            "correctIndex": 2,
+            "explanation": "The presence of gas bubbles within a fluid collection indicates infected pancreatic necrosis or abscess. This requires targeted antibiotic treatment (such as carbapenems) along with minimally invasive or surgical necrosectomy/drainage.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__4__45wg0l",
+            "number": "4",
+            "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
+            "options": [
+              "Grey Turner's sign",
+              "Cullen's sign",
+              "Murphy's sign",
+              "McBurney's sign",
+              "Rovsing's sign"
+            ],
+            "originalOptions": [
+              "Grey Turner's sign",
+              "Cullen's sign",
+              "Murphy's sign",
+              "McBurney's sign",
+              "Rovsing's sign"
+            ],
+            "correctAnswer": "B) Cullen's sign",
+            "correctAnswerText": "Cullen's sign",
+            "correctIndex": 2,
+            "explanation": "Cullen's sign is superficial bruising around the umbilicus. Grey Turner's sign refers to bruising along the flanks. Both signs represent retroperitoneal bleeding associated with severe hemorrhagic pancreatitis.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__5__q94gse",
+            "number": "5",
+            "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
+            "options": [
+              "Jaundice, weight loss, and palpable gallbladder",
+              "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+              "Abdominal pain, ascites, and pleural effusion",
+              "Fever, right upper quadrant pain, and jaundice",
+              "Hematemesis, melena, and splenomegaly"
+            ],
+            "originalOptions": [
+              "Jaundice, weight loss, and palpable gallbladder",
+              "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+              "Abdominal pain, ascites, and pleural effusion",
+              "Fever, right upper quadrant pain, and jaundice",
+              "Hematemesis, melena, and splenomegaly"
+            ],
+            "correctAnswer": "B) Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+            "correctAnswerText": "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+            "correctIndex": 1,
+            "explanation": "This classic triad signifies the loss of both exocrine function (causing fat malabsorption/steatorrhea) and endocrine function (causing diabetes) due to extensive parenchymal destruction and calcification over time.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__6__ajqz14",
+            "number": "6",
+            "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
+            "options": [
+              "Hereditary pancreatitis",
+              "Alcoholic chronic pancreatitis",
+              "Autoimmune pancreatitis (Type 1)",
+              "Tropical pancreatitis",
+              "Idiopathic pancreatitis"
+            ],
+            "originalOptions": [
+              "Hereditary pancreatitis",
+              "Alcoholic chronic pancreatitis",
+              "Autoimmune pancreatitis (Type 1)",
+              "Tropical pancreatitis",
+              "Idiopathic pancreatitis"
+            ],
+            "correctAnswer": "C) Autoimmune pancreatitis (Type 1)",
+            "correctAnswerText": "Autoimmune pancreatitis (Type 1)",
+            "correctIndex": 0,
+            "explanation": "Type 1 Autoimmune Pancreatitis is part of an IgG4-related systemic disease. It responds well to steroid therapy and characteristically shows elevated serum levels of IgG4 antibodies.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          },
+          {
+            "id": "surgery__ai__pancreatitis__7__ks54uh",
+            "number": "7",
+            "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
+            "options": [
+              "Bacterial infection of the biliary tree",
+              "Premature intra-acinar activation of trypsinogen to trypsin",
+              "Autoimmune destruction of islet cells",
+              "Ischemic injury due to mesenteric artery occlusion",
+              "Excessive secretion of bicarbonate by pancreatic ductal cells"
+            ],
+            "originalOptions": [
+              "Bacterial infection of the biliary tree",
+              "Premature intra-acinar activation of trypsinogen to trypsin",
+              "Autoimmune destruction of islet cells",
+              "Ischemic injury due to mesenteric artery occlusion",
+              "Excessive secretion of bicarbonate by pancreatic ductal cells"
+            ],
+            "correctAnswer": "B) Premature intra-acinar activation of trypsinogen to trypsin",
+            "correctAnswerText": "Premature intra-acinar activation of trypsinogen to trypsin",
+            "correctIndex": 1,
+            "explanation": "The cornerstone of acute pancreatitis pathogenesis is the inappropriate, premature activation of digestive zymogens (specifically trypsinogen to trypsin) within the pancreatic acinar cells, leading to autodigestion of the gland.",
+            "batchName": "",
+            "pageNumber": "",
+            "subjectName": "Surgery",
+            "subjectId": "surgery",
+            "lectureName": "Pancreatitis",
+            "groupName": "Pancreatitis",
+            "sourceType": "ai"
+          }
+        ]
+      }
+    ],
+    "years": [],
+    "allQuestions": [
+      {
+        "id": "surgery__lecture__fluids__1__cvoiz0",
+        "number": "1",
+        "text": "A 95 kg patient sustains a 42% Total Body Surface Area (TBSA) burn. He received 3 liters of crystalloid before arrival, 4 hours post-burn. Using the Parkland formula, what is the hourly infusion rate for the remaining 4 hours of the first 8hour period?",
+        "options": [
+          "800 mL/hr",
+          "1000 mL/hr",
+          "1250 mL/hr",
+          "1500 mL/hr",
+          "1800 mL/hr"
+        ],
+        "originalOptions": [
+          "800 mL/hr",
+          "1000 mL/hr",
+          "1250 mL/hr",
+          "1500 mL/hr",
+          "1800 mL/hr"
+        ],
+        "correctAnswer": "C) 1250 mL/hr",
+        "correctAnswerText": "1250 mL/hr",
+        "correctIndex": 2,
+        "explanation": "1. Total fluid 24h = 4 mL x 95 kg x 42 = 15,960 mL. 2. First 8h requirement (50%) = 7,980 mL. 3. Fluid already given = 3,000 mL. 4. Remaining fluid for first 8h = 4,980 mL. 5. Time remaining in first 8h window = 4 hours. 6. Rate = 4,980 mL / 4 hr = 1,245 mL/hr (closest to 1250).",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Fluids",
+        "groupName": "Fluids",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "surgery__lecture__fluids__2__eykfbt",
+        "number": "2",
+        "text": "A 70-year-old male sustains a high-voltage electrical burn. On admission, his urine is dark in color, and urine output is 30 mL/hr. Compartment pressure in the affected limb is 20 mmHg. What is the main complication that should be anticipated and treated in this patient?",
+        "options": [
+          "Acute renal failure",
+          "Cardiac arrhythmia",
+          "Compartment syndrome requiring fasciotomy",
+          "Curling's ulcer",
+          "Pulmonary embolism"
+        ],
+        "originalOptions": [
+          "Acute renal failure",
+          "Cardiac arrhythmia",
+          "Compartment syndrome requiring fasciotomy",
+          "Curling's ulcer",
+          "Pulmonary embolism"
+        ],
+        "correctAnswer": "A) Acute renal failure",
+        "correctAnswerText": "Acute renal failure",
+        "correctIndex": 0,
+        "explanation": "Dark urine after a high-voltage electrical burn suggests myoglobinuria due to rhabdomyolysis. This places the patient at high risk of acute kidney injury and requires prompt fluid resuscitation and monitoring.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Fluids",
+        "groupName": "Fluids",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "surgery__lecture__fluids__3__bclkl0",
+        "number": "3",
+        "text": "Large volume resuscitation with 0.9% Normal Saline is associated with which acid-base disturbance?",
+        "options": [
+          "Metabolic alkalosis",
+          "Respiratory acidosis",
+          "Hyperchloremic metabolic acidosis",
+          "Hypochloremic metabolic acidosis",
+          "Respiratory alkalosis"
+        ],
+        "originalOptions": [
+          "Metabolic alkalosis",
+          "Respiratory acidosis",
+          "Hyperchloremic metabolic acidosis",
+          "Hypochloremic metabolic acidosis",
+          "Respiratory alkalosis"
+        ],
+        "correctAnswer": "C) Hyperchloremic metabolic acidosis",
+        "correctAnswerText": "Hyperchloremic metabolic acidosis",
+        "correctIndex": 2,
+        "explanation": "Normal saline contains high levels of chloride (154 mEq/L) compared to plasma. Excessive administration leads to hyperchloremia and a normal anion gap metabolic acidosis.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Fluids",
+        "groupName": "Fluids",
+        "sourceType": "lecture"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__1__r3kge",
+        "number": "1",
+        "text": "Pancreatitis Which of the following is the most sensitive and specific serum biomarker for the diagnosis of acute pancreatitis?",
+        "options": [
+          "Serum amylase",
+          "Serum lipase",
+          "Alkaline phosphatase",
+          "Alanine aminotransferase (ALT)",
+          "C-reactive protein (CRP)"
+        ],
+        "originalOptions": [
+          "Serum amylase",
+          "Serum lipase",
+          "Alkaline phosphatase",
+          "Alanine aminotransferase (ALT)",
+          "C-reactive protein (CRP)"
+        ],
+        "correctAnswer": "B) Serum lipase",
+        "correctAnswerText": "Serum lipase",
+        "correctIndex": 1,
+        "explanation": "Serum lipase is preferred over serum amylase because it remains elevated longer and has higher sensitivity and specificity for pancreatic tissue injury. Amylase can rise in non-pancreatic conditions and drops quickly.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__2__8xuesk",
+        "number": "2",
+        "text": "Which of the following scoring systems is specifically designed to assess the severity of acute pancreatitis at the time of admission and monitor progress over the first 48 hours using criteria such as WBC count, blood glucose, and fluid sequestration?",
+        "options": [
+          "CHADS2 score",
+          "Ranson criteria",
+          "Child-Pugh score",
+          "CURB-65",
+          "Glasgow Coma Scale"
+        ],
+        "originalOptions": [
+          "CHADS2 score",
+          "Ranson criteria",
+          "Child-Pugh score",
+          "CURB-65",
+          "Glasgow Coma Scale"
+        ],
+        "correctAnswer": "B) Ranson criteria",
+        "correctAnswerText": "Ranson criteria",
+        "correctIndex": 1,
+        "explanation": "Ranson criteria evaluate 5 parameters at admission and 6 parameters during the initial 48 hours to predict the severity and mortality risk of acute pancreatitis. The other scales are for stroke, liver failure, pneumonia, or consciousness.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__3__45gu1i",
+        "number": "3",
+        "text": "A 45-year-old patient with severe acute pancreatitis develops a persistent high fever and worsening abdominal pain 2 weeks after admission. A CT scan reveals gas bubbles within a well-defined pancreatic collection. Which of the following is the most appropriate next step in management?",
+        "options": [
+          "Conservative management with intravenous fluids only",
+          "Immediate prophylactic administration of antihistamines",
+          "Initiating empiric antibiotic therapy and planning for drainage",
+          "High-dose corticosteroid therapy",
+          "Immediate total pancreatectomy"
+        ],
+        "originalOptions": [
+          "Conservative management with intravenous fluids only",
+          "Immediate prophylactic administration of antihistamines",
+          "Initiating empiric antibiotic therapy and planning for drainage",
+          "High-dose corticosteroid therapy",
+          "Immediate total pancreatectomy"
+        ],
+        "correctAnswer": "C) Initiating empiric antibiotic therapy and planning for drainage",
+        "correctAnswerText": "Initiating empiric antibiotic therapy and planning for drainage",
+        "correctIndex": 2,
+        "explanation": "The presence of gas bubbles within a fluid collection indicates infected pancreatic necrosis or abscess. This requires targeted antibiotic treatment (such as carbapenems) along with minimally invasive or surgical necrosectomy/drainage.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__4__45wg0l",
+        "number": "4",
+        "text": "Which of the following physical examination findings is characterized by ecchymosis around the umbilicus, indicating severe necrotizing pancreatitis with retroperitoneal hemorrhage?",
+        "options": [
+          "Grey Turner's sign",
+          "Cullen's sign",
+          "Murphy's sign",
+          "McBurney's sign",
+          "Rovsing's sign"
+        ],
+        "originalOptions": [
+          "Grey Turner's sign",
+          "Cullen's sign",
+          "Murphy's sign",
+          "McBurney's sign",
+          "Rovsing's sign"
+        ],
+        "correctAnswer": "B) Cullen's sign",
+        "correctAnswerText": "Cullen's sign",
+        "correctIndex": 2,
+        "explanation": "Cullen's sign is superficial bruising around the umbilicus. Grey Turner's sign refers to bruising along the flanks. Both signs represent retroperitoneal bleeding associated with severe hemorrhagic pancreatitis.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__5__q94gse",
+        "number": "5",
+        "text": "What is the classic clinical triad used to recognize advanced chronic pancreatitis?",
+        "options": [
+          "Jaundice, weight loss, and palpable gallbladder",
+          "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+          "Abdominal pain, ascites, and pleural effusion",
+          "Fever, right upper quadrant pain, and jaundice",
+          "Hematemesis, melena, and splenomegaly"
+        ],
+        "originalOptions": [
+          "Jaundice, weight loss, and palpable gallbladder",
+          "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+          "Abdominal pain, ascites, and pleural effusion",
+          "Fever, right upper quadrant pain, and jaundice",
+          "Hematemesis, melena, and splenomegaly"
+        ],
+        "correctAnswer": "B) Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+        "correctAnswerText": "Steatorrhea, pancreatic calcifications, and diabetes mellitus",
+        "correctIndex": 1,
+        "explanation": "This classic triad signifies the loss of both exocrine function (causing fat malabsorption/steatorrhea) and endocrine function (causing diabetes) due to extensive parenchymal destruction and calcification over time.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__6__ajqz14",
+        "number": "6",
+        "text": "A patient with a history of recurrent acute pancreatitis is found to have significantly elevated serum IgG4 levels. Which type of pancreatitis is most strongly associated with this finding?",
+        "options": [
+          "Hereditary pancreatitis",
+          "Alcoholic chronic pancreatitis",
+          "Autoimmune pancreatitis (Type 1)",
+          "Tropical pancreatitis",
+          "Idiopathic pancreatitis"
+        ],
+        "originalOptions": [
+          "Hereditary pancreatitis",
+          "Alcoholic chronic pancreatitis",
+          "Autoimmune pancreatitis (Type 1)",
+          "Tropical pancreatitis",
+          "Idiopathic pancreatitis"
+        ],
+        "correctAnswer": "C) Autoimmune pancreatitis (Type 1)",
+        "correctAnswerText": "Autoimmune pancreatitis (Type 1)",
+        "correctIndex": 0,
+        "explanation": "Type 1 Autoimmune Pancreatitis is part of an IgG4-related systemic disease. It responds well to steroid therapy and characteristically shows elevated serum levels of IgG4 antibodies.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      },
+      {
+        "id": "surgery__ai__pancreatitis__7__ks54uh",
+        "number": "7",
+        "text": "Which of the following pathogenic mechanisms initiates the tissue damage seen in acute pancreatitis?",
+        "options": [
+          "Bacterial infection of the biliary tree",
+          "Premature intra-acinar activation of trypsinogen to trypsin",
+          "Autoimmune destruction of islet cells",
+          "Ischemic injury due to mesenteric artery occlusion",
+          "Excessive secretion of bicarbonate by pancreatic ductal cells"
+        ],
+        "originalOptions": [
+          "Bacterial infection of the biliary tree",
+          "Premature intra-acinar activation of trypsinogen to trypsin",
+          "Autoimmune destruction of islet cells",
+          "Ischemic injury due to mesenteric artery occlusion",
+          "Excessive secretion of bicarbonate by pancreatic ductal cells"
+        ],
+        "correctAnswer": "B) Premature intra-acinar activation of trypsinogen to trypsin",
+        "correctAnswerText": "Premature intra-acinar activation of trypsinogen to trypsin",
+        "correctIndex": 1,
+        "explanation": "The cornerstone of acute pancreatitis pathogenesis is the inappropriate, premature activation of digestive zymogens (specifically trypsinogen to trypsin) within the pancreatic acinar cells, leading to autodigestion of the gland.",
+        "batchName": "",
+        "pageNumber": "",
+        "subjectName": "Surgery",
+        "subjectId": "surgery",
+        "lectureName": "Pancreatitis",
+        "groupName": "Pancreatitis",
+        "sourceType": "ai"
+      }
+    ],
+    "totalQuestions": 10,
+    "totalLectures": 2,
+    "hasAiFolder": true
+  }
+]
